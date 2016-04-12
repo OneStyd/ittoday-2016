@@ -2,10 +2,9 @@
 /* Coming Soon Template By Bootstrapious.com */
 /* ========================================= */
 .main {
-  /*background-position: center center;*/
-  background-repeat: repeat;
-  background-size: 20px;
-  /*height: auto;*/
+  background-position: center center;
+  background-size: cover;
+  height: auto;
   left: 0;
   min-height: 100%;
   min-width: 100%;
@@ -13,37 +12,9 @@
   top: 0;
   width: auto;
 }
-.burung {
-  background-position: left top;
-  background-repeat: no-repeat;
-  height: auto;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: auto;
-}
-
-@media (min-width: 700px) {
+@media (max-width: 991px) {
   .main {
     padding: 20px;
-  }
-  .burung {
-    padding: 20px;
-    background-size: 700px;
-    min-height: 100%;
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .burung {
-    /*margin-top: 40px;*/
-    /*padding: 20px;*/
-    position: fixed;
-    margin: 40px 0 0 0;
-    background-size: 400px;
-    min-height: 100%;
-    min-width: 100%;
   }
 }
 .main .overlay {
@@ -969,17 +940,4 @@ a.list-group-item.active > .badge,
 .smalltext{
     padding-top: 5px;
     font-size: 16px;
-}
-#countdown {
-  color: #FFFFFF;
-}
-
-#countdown span {
-  font-family: Orbitron, sans;
-  color: #E5E5E5;
-  font-size: 26px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
 }
