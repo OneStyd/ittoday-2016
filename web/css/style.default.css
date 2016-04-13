@@ -1,5 +1,6 @@
 /* ========================================= */
 /* Coming Soon Template By Bootstrapious.com */
+/* Modified by Surado & Wawan                */
 /* ========================================= */
 .main {
   /*background-position: center center;*/
@@ -159,6 +160,11 @@
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   font-size: 30px;
+}
+@media(max-width: 700px){
+  .sub{
+     font-size: 20px;
+  }
 }
 @media (min-width: 768px) {
   .main .mailing-list input {
@@ -996,4 +1002,9 @@ a.list-group-item.active > .badge,
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+}
+@media (max-width: 700px){
+  #countdown span{
+      font-size: 15px;
+  }
 }
