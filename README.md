@@ -17,38 +17,38 @@
 
 <b>SIGN UP & LOGIN</b>
 
-Alamat Email
-Password
-Konfirmasi Password
-Pernyataan setuju terhadap aturan main IT TODAY 2016
+Alamat Email<br/>
+Password<br/>
+Konfirmasi Password<br/>
+Pernyataan setuju terhadap aturan main IT TODAY 2016<br/>
 
-Setelah berhasil, lanjut isi FORM PENDAFTARAN berikut
-Nama Lengkap
-Alamat Email
-No. HP
-Alamat
-No. Kartu Pelajar/Mahasiswa/Identitas
-Institusi Asal
-Tahun Masuk
-Pilihan Acara (checkbox)
+Setelah berhasil, lanjut isi FORM PENDAFTARAN berikut<br/>
+Nama Lengkap<br/>
+Alamat Email<br/>
+No. HP<br/>
+Alamat<br/>
+No. Kartu Pelajar/Mahasiswa/Identitas<br/>
+Institusi Asal<br/>
+Tahun Masuk<br/>
+Pilihan Acara (checkbox)<br/>
 
-Apabila dipilih, baru muncul:
-1. Agricode or Agrihack
--Ukuran Baju
--Upload Scan Kartu Pelajar/Mahasiswa (format .png/.jpg max 1MB)
+Apabila dipilih, baru muncul:<br/>
+1. Agricode or Agrihack<br/>
+-Ukuran Baju<br/>
+-Upload Scan Kartu Pelajar/Mahasiswa (format .png/.jpg max 1MB)<br/>
 
-IGDC
--Nama Tim
--Nama Anggota 1
--No. Kartu Pelajar/Mahasiswa Anggota 1
--Nama Anggota 2
--No. Kartu Pelajar/Mahasiswa Anggota 2
--Upload Scan Kartu Pelajar/Mahasiswa milik Tim (format .rar/.zip/.pdf max 2MB)
+IGDC<br/>
+-Nama Tim<br/>
+-Nama Anggota 1<br/>
+-No. Kartu Pelajar/Mahasiswa Anggota 1<br/>
+-Nama Anggota 2<br/>
+-No. Kartu Pelajar/Mahasiswa Anggota 2<br/>
+-Upload Scan Kartu Pelajar/Mahasiswa milik Tim (format .rar/.zip/.pdf max 2MB)<br/>
 
-ISC
-(nihil)
+ISC<br/>
+(nihil)<br/>
 
-Seminar
-(nihil)
+Seminar<br/>
+(nihil)<br/>
 
 </html>
