@@ -995,30 +995,29 @@ a.list-group-item.active > .badge,
 }
 #countdown {
   color: #FFFFFF;
+  border: 5px double #B3344A;
+  border-left: none;
+  border-right: none;
+  width: 70%;
 }
 
 #countdown div {
   font-family: Orbitron, sans;
   color: #E5E5E5;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: normal;
-  margin: 13px;
+  margin: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
-  padding: 2px 5px 2px;
-  border: 5px double #B3344A;
   border-left: none;
   border-right: none;
   display: inline-block;
 }
-#countdown div:first-child { 
-  border-left: 5px double #B3344A ;
-  border-right: none; 
-}
-#countdown div:last-child {
-  border-right: 5px double #B3344A ; 
-  border-left: none; 
-}
 @media (max-width: 700px){
+  #countdown {
+	  border: none;
+  }
   #countdown div{
       font-size: 18px;
 	  border: 5px double #B3344A;
@@ -1076,6 +1075,7 @@ div a:focus {
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
+  margin-right: 5px;
 }
 
 .cl-effect-2 a span {
