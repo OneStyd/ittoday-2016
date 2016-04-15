@@ -1081,6 +1081,7 @@ div a:focus {
 
 .cl-effect-2 a span {
   position: relative;
+  font-weight: 800;
   color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1137,6 +1138,7 @@ div a:focus {
 
 .cl-effect-2-2 a span {
   position: relative;
+  font-weight: 800;
   color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1194,6 +1196,7 @@ div a:focus {
 
 .cl-effect-2-3 a span {
   position: relative;
+  font-weight: 800;
   color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1251,6 +1254,7 @@ div a:focus {
 
 .cl-effect-2-4 a span {
   position: relative;
+  font-weight: 800;
   color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
