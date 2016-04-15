@@ -141,7 +141,7 @@
 }
 @media (min-width: 700px) {
   .cursive > img {
-    width: 500px;
+    width: 400px;
     /*margin-top: 100px;*/
   }
 }
@@ -998,6 +998,7 @@ a.list-group-item.active > .badge,
   border: 5px double #B3344A;
   border-left: none;
   border-right: none;
+  margin-top:40px;
   width: 70%;
 }
 
@@ -1016,15 +1017,15 @@ a.list-group-item.active > .badge,
 }
 @media (max-width: 700px){
   #countdown {
-	  border: none;
+	  border: 5px double #B3344A;
   }
   #countdown div{
       font-size: 18px;
-	  border: 5px double #B3344A;
+	  /*border: 5px double #B3344A;*/
 	  width: 50%;
 	  margin: 0px;
   }
-  #countdown div:first-child { 
+ /* #countdown div:first-child { 
 	  border-bottom: none;
 	  border-right: 5px double #B3344A;
   }
@@ -1036,7 +1037,7 @@ a.list-group-item.active > .badge,
   #countdown div:last-child {
 	  border-top: none;
 	  border-left: 5px double #B3344A;
-  }
+  }*/
 }
 
 /* SOCIALMEDIA*/
@@ -1080,6 +1081,7 @@ div a:focus {
 
 .cl-effect-2 a span {
   position: relative;
+  color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -1101,7 +1103,7 @@ div a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3B5998;
+  background: #fff;
   content: attr(data-hover);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -1123,7 +1125,7 @@ div a:focus {
 
 .csstransforms3d .cl-effect-2 a:hover span::before,
 .csstransforms3d .cl-effect-2 a:focus span::before {
-  background: #3B5998;  
+  background: #fff;
 }
 /*TWITTER*/
 .cl-effect-2-2 a {
@@ -1135,6 +1137,7 @@ div a:focus {
 
 .cl-effect-2-2 a span {
   position: relative;
+  color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -1156,7 +1159,7 @@ div a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #29B2E4;
+  background: #fff;
   content: attr(data-hover);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -1178,7 +1181,7 @@ div a:focus {
 
 .csstransforms3d .cl-effect-2-2 a:hover span::before,
 .csstransforms3d .cl-effect-2-2 a:focus span::before {
-  background: #29B2E4;  
+  background: #fff;  
 }
 
 /*YOUTUBE*/
@@ -1191,6 +1194,7 @@ div a:focus {
 
 .cl-effect-2-3 a span {
   position: relative;
+  color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -1212,7 +1216,7 @@ div a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #D52F34;
+  background: #fff;
   content: attr(data-hover);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -1234,7 +1238,7 @@ div a:focus {
 
 .csstransforms3d .cl-effect-2-3 a:hover span::before,
 .csstransforms3d .cl-effect-2-3 a:focus span::before {
-  background: #D52F34;  
+  background: #fff;  
 }
 
 /*INSTAGRAM*/
@@ -1247,6 +1251,7 @@ div a:focus {
 
 .cl-effect-2-4 a span {
   position: relative;
+  color: #680e33;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -1268,7 +1273,7 @@ div a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #4F7CA2;
+  background: #fff;
   content: attr(data-hover);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -1290,5 +1295,5 @@ div a:focus {
 
 .csstransforms3d .cl-effect-2-4 a:hover span::before,
 .csstransforms3d .cl-effect-2-4 a:focus span::before {
-  background: #4F7CA2;  
+  background: #fff;  
 }
