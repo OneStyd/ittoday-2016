@@ -6,6 +6,7 @@
 		echo "belum login";
 	}else{
 		$info = get_user_info($_SESSION['ittoday_user']);
+		//echo $info['id_user'];
 	}
 
 	if(isset($_POST['skip'])){
@@ -29,12 +30,12 @@
 	<div class="container">
 		<div class="col-md-4">
 		<h3>PILIHAN ACARA</h3>
-		<form id="pilihan_acara" method="post" >
+		<form id="pilihan_acara" action="acaraproses.php" method="post" enctype="multipart/form-data">
 			<input type="hidden" name="pilcar" value="<?php echo $info['id_user']; ?>"/> <!-- tampilkan id pendaftar -->
 			<div class="form-group">
 				<label for="pilcar">Anda boleh memilih lebih dari 1 acara:</label><br/>
 				<sub>Jika masih bingung, Anda boleh langsung melewati tahapan ini.</sub><br/><br/>
-				<input type="checkbox" name="agricode" id="agricode"> Agricode [Competitive Prgramming] <br/>
+				<input type="checkbox" name="check_ac" value="1" id="agricode"> Agricode [Competitive Prgramming] <br/>
 				<script type="text/javascript">
 					$('#agricode').click(function() {
 					$('#agricode-set')[this.checked ? "show" : "hide"]();
@@ -44,11 +45,11 @@
 				<fieldset id="agricode-set" hidden>
 						<label for='ukuran_baju_ac'>Ukuran Baju</label><br/>
                         <select id="ukuran_baju_ac" name="ukuran_baju_ac" class="form-control">
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
                         </select>
 						<br/><label class="control-label">Upload Identitas (Kartu Mahasiswa/KTP)</label><br/>
 						<sub>Maksimal 1MB, format: .jpg atau .png</sub><br/><br/>
@@ -56,7 +57,7 @@
 						<br/>
 				</fieldset>
 				</div></div>
-				<input type="checkbox" name="agrihack" id="agrihack"> Agrihack [Capture The Flag]<br/>
+				<input type="checkbox" name="check_ah" value="1" id="agrihack"> Agrihack [Capture The Flag]<br/>
 				<script type="text/javascript">
 					$('#agrihack').click(function() {
 					$('#agrihack-set')[this.checked ? "show" : "hide"]();
@@ -66,11 +67,11 @@
 				<fieldset id="agrihack-set" hidden>
 						<label for='ukuran_baju_ac'>Ukuran Baju</label><br/>
                         <select id="ukuran_baju_ah" name="ukuran_baju_ah" class="form-control">
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
                         </select>
 						<br/><label class="control-label">Upload Identitas (Kartu Mahasiswa/KTP)</label><br/>
 						<sub>Maksimal 1MB, format: .jpg atau .png</sub><br/><br/>
@@ -78,7 +79,7 @@
 						<br/>
 				</fieldset>
 				</div></div>
-				<input type="checkbox" name="igdc" id="igdc"> IPB Game Dev Competition<br/>
+				<input type="checkbox" name="check_igdc" value="1" id="igdc"> IPB Game Dev Competition<br/>
 				<script type="text/javascript">
 					$('#igdc').click(function() {
 					$('#igdc-set')[this.checked ? "show" : "hide"]();
@@ -98,12 +99,12 @@
 					<input type="text" class="form-control" name="id_anggota_2" id="id_anggota_2" />
 					<br/><label class="control-label">Upload Identitas Tim (Kartu Mahasiswa/KTP)</label><br/>
 						<sub>Maksimal 1MB, format: jadikan satu dalam bentuk PDF</sub><br/><br/>
-						<input id="ktm_agrihack" type="file" name="ktm_ah" class="file">
+						<input id="ktm_agrihack" type="file" name="ktm_igdc" class="file">
 					<br/>
 				</fieldset>
 				</div></div>
-				<input type="checkbox" name="isc" id="isc"> IPB Searching Competition<br/>
-				<input type="checkbox" name="seminar" id="seminar"> Seminar IT<br/>
+				<input type="checkbox" name="check_isc" value="1" id="isc"> IPB Searching Competition<br/>
+				<input type="checkbox" name="check_seminar" value="1" id="seminar"> Seminar IT<br/>
 				<br/>
 				<button type="submit" class="btn btn-danger" value="Proceed">Proceed</button>
 				<button type="submit" class="btn btn-danger" name="skip" value="1">Lewati</button>

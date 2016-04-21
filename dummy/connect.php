@@ -1,6 +1,6 @@
 <?php
 	
-	$conn = new mysqli('localhost', 'root', '1234', 'ittoday_2016');
+	$conn = new mysqli('localhost', 'root', '', 'ittoday_2016');
 	$tablename = "ittoday";
 
 ?>
