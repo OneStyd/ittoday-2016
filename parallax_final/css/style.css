@@ -1,0 +1,353 @@
+/*
+Theme Name: Simple Parallax Website
+Description: Simple Parallax Scrolling Effect
+Author: Samuel Dalusung
+*/
+
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 55px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+   font-family:"Arvo";
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+	padding: 0;
+}
+
+h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 32px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: ;
+}
+
+
+.hoame {
+	width:50%;
+  	margin-right: 240px;
+  /*margin-left: -15px;*/
+}
+.center { margin: 0 auto; }
+.content{ margin: 0 auto !important; width: 960px !important; }
+.isi_slide {margin: 20% auto;}
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+a.lpanel:hover{ color: #fff; }
+a.rpanel:hover{ color: #fff; }
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+#isc_slide{
+	position: fixed;
+	left: 10%;
+	bottom: 17%;
+	/*padding-bottom: 120px;*/
+	z-index: -1;
+}
+
+
+#header { 
+	width: 100%; 
+	/*background: url('../img/header-bg.png'); */
+	background: #000;
+	height: auto; 	
+	bottom:0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: fixed;
+	z-index: 2;
+	/*margin-top: 30px;*/
+}
+
+#navigasi { width: 520px; float: right; margin-top:0px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 0px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#logo img{
+	position: absolute;
+	max-width: 5%;
+}
+#navigasi ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#navigasi li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 21px;
+}
+
+#navigasi li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#navigasi li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#navigasi li a:hover { color: #fff; opacity:1;  }
+
+.tombol{
+border:none;
+  font-family: 'Wellfleet';
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  padding: 3px 10px;
+  background:#555;
+  transition:0.5s all;
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -o-transition:0.5s all;
+  -ms-transition:0.5s all;
+}
+.tombol:hover{
+background:#020202;
+}
+
+.bg_content{
+	background:url('../img/isc_nyala.jpg') 50% 0 no-repeat fixed;
+	opacity: 0.5;
+	background-size: cover;
+	z-index: -9;
+}
+
+
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes {   
+ font-family: 'Goudy Bookletter 1911', serif;
+   font-weight: normal;
+   font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+  
+}
+   
+ .author_name_white { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }  
+ .author_name_gray { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }  
+ .quotes_container { width: 800px; margin: 0 auto; }
+#ittoday_logo { background: url('../img/laogo.png')no-repeat; background-size: 400px; width: 500px; height: 210px; position: relative; left: 275px;}
+#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+#ribbon { background: url('../img/headaer-bg.png')repeat; display: block; position: absolute; right: 8px; border-radius: 15px}
+#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -54px; left: -102px; }
+#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -33px;  right: -100px; }
+
+
+
+/*= BUTTONS
+--------------------------------------------------------*/
+
+button.btn-know { 
+	padding: 15px 47px; 
+	margin: 40px 38.8%;
+	text-align: center;
+	border: 4px solid #fff; 
+	color: #fff; 
+	background: transparent; 
+	font-size: 19px;
+	cursor: pointer;
+	text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn-know:hover { background: #fff; color: transparent; }
+ul.built { list-style: none; margin: 0 auto; width: 730px; }
+.built li img{ float: left; padding-right: 34px; }
+
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+#slide1{
+	background:url('../img/bg_putih.jpg') 50% 0 no-repeat fixed;
+	display:table;
+	background-color: #fff;
+	color: #fff;
+	/*height: 350px;*/
+	/*margin: 0;*/
+	/*padding: 200px 0 200px 0;*/
+	height: 100%;
+ 	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+
+}
+
+#slide2{
+	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	/*background-color: #fff;*/
+	color: #333333;
+	height: 100%;
+ 	position: relative;
+	width: 100%;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 2;
+}
+
+#isc_section{
+	/*background: url('../img/isc_nyala.jpg') 50% no-repeat fixed;*/
+	background-color: #231111;
+	color: #fff;
+	/*height: 750px;*/
+	/*padding: 200px 0 0 0;	*/
+	/*background-size: 900px;*/
+}
+.isc_terang{
+	background: url('../img/isc/isc_nyala.jpg') 50% 30% no-repeat fixed;
+	height: 100%;
+ 	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.isc_gelap{
+	background: url('../img/isc/isc_mati.jpg') 50% 30% no-repeat fixed;
+	height: 100%;
+ 	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#slide3 .quotes{
+	background-color: rgba(0, 0, 0, 0.65);
+	padding: 20px 20px 20px 20px;
+	border-radius: 12px;
+
+}
+
+#slide4{
+	background-color: #fff;
+	color: #333333;
+	height: 400px;
+	padding: 200px 0;
+}
+
+#slide5{
+	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	height: 400px;
+	margin: 0 auto;
+	padding: 250px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+#slide6{
+	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 170px 0 0 0;	
+	background-size: cover;
+}
+
+.row2 {
+  position:absolute;
+  color:#000;
+  top:50%;
+  left:50%;
+  padding:15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+
+/*MODAL CSS*/
+.modal{
+	position:relative;
+	padding:120px 0;
+
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px; font-color:#000;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    color:#000;
+    border-radius: 15px;
+    font-family: Oswald;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    /*border: 1px solid #888;*/
+    width: 80%;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/*END MODAL CSS*/
+
+
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  a { text-decoration: none; color: #fff;  }
