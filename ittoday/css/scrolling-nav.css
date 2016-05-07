@@ -1,0 +1,140 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Modified by: Fadhlal K. Surado;
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    background: url(../img/intro/awan1.png) 50% 0 no-repeat;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100%;
+    width:100%;
+    padding-top: 100px;
+    text-align: center;
+    z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background: #fff;*/
+}
+
+.igdc-section {
+    background: url(../img/igdc/awan2.png) center top no-repeat;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100%;
+    width:100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #fff;*/
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.isc-section {
+    background: url(../img/isc/awan3.png) center top no-repeat;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background: #eee;*/
+}
+
+.agricode-section {
+    background: url(../img/igdc/awan4.png) center top no-repeat;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100%;
+    width:100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #fff;*/
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.agrihack-section {
+    background: url(../img/igdc/awan5.png) center top no-repeat;
+    /*background-size: cover;*/
+    position: relative;
+    height: 100%;
+    width:100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #fff;*/
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.seminar-section {
+    background: url(../img/igdc/dasar.png) center top no-repeat;
+    position: relative;
+    height: 100%;
+    width:100%;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.down-arrow{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:3.5%;
+}
+
+.down-arrow > a{
+    color: #fff;
+    text-shadow: 2px 2px 10px #000;
+}
