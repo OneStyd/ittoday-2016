@@ -24,6 +24,7 @@
     <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
     <style>
         @font-face{
             font-family: Arvo;
@@ -48,6 +49,12 @@
             src: url(fonts/perfectly_amicable.ttf);
             font-weight: 500;
         }
+        @font-face{
+            font-family: Comfortaa;
+            src: url(fonts/Comfortaa-Regular.ttf);
+            font-weight: 500;
+        }
+        @import url(//fonts.googleapis.com/css?family=Comfortaa);
 
         .navbar{
             background: #000;
@@ -79,9 +86,9 @@
         }
 
         .main-text{
-            padding-top:50%; 
+            padding-top:20%; 
             font-family:amicable;
-            font-size:4vmax;
+            font-size:5vmax;
             line-height:1;
         }
 
@@ -137,6 +144,13 @@
 
         }
 
+        .section-icon>img{
+            max-width: 70%;
+            height: auto;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
         /*.col-md-6, .col-md-12, div.col-md-6>h3, .row{
             font-size: 1vmax !important;
         }*/
@@ -144,12 +158,31 @@
             padding-bottom: 5%;
         }
 
+        div.col-lg-12>p, div.col-lg-12>ul, div.col-lg-12>li{
+            font-size: 2vmax;
+            margin-right: 10%;
+            margin-left: 10%;
+            z-index: 5;
+        }
+
+        h1{
+            font-size:4vmax;
+        }
+
+        .btn-ittoday{
+            background-color: #800c24;
+            color:#fff;
+            position: relative;
+            left:30%;
+        }
        
         html, body{
-            font-family: Aller;
+            font-family: Comfortaa, Aller;
+            color:#800c24;
         }
 
     </style>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -264,7 +297,7 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrollinga-nav.js"></script>
+    <script src="js/scrolling-nav.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
         
@@ -298,6 +331,7 @@
 
     </script>
 
+     <script src="js/jquery-sectionsnap.js"></script>
 
 
 </body>

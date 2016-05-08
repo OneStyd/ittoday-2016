@@ -61,7 +61,7 @@
 
 ?>	
 
-	<section id="intro" class="intro-section">
+	<section id="intro" class="intro-section page-section">
 		<div class="row-login" style="text-align:left;">
 			<div class="col-md-5 col-md-offset-1">
 				<h3>Login</h3>

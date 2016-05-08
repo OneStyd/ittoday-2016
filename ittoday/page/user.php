@@ -5,7 +5,7 @@
 
 
 
-    <section id="intro" class="intro-section">
+    <section id="intro" class="intro-section page-section">
         <!-- <div class="container"> -->
             <div class="container" style="text-align:left">
                 <div class="col-md-5 col-md-offset-1">
