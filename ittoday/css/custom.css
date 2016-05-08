@@ -49,6 +49,10 @@ h1{
 	font-size:4vmax;
 }
 
+form label span{
+	color: #F00;
+}
+
 	/*=======
 	| Class |
 	=======*/
@@ -135,18 +139,28 @@ h1{
 	left:30%;
 } 
 
-.row-login {
-	position:absolute;
-	color:#000;
-	top:50%;
-	left:50%;
-	padding:15px;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	width: 100%;
+.page-section{
+	margin-top: 10px;;
 }
 
+.page-section h2{
+	font-family: amicable;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.page-section h6{
+	margin: 0px;
+}
+
+.page-section button{
+	float: right;
+}
+
+.row-login{
+	margin-top: 5%;
+}
+	
 	/*=======
 	| Media |
 	=======*/	             
