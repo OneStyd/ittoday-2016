@@ -1,0 +1,154 @@
+	/*=======
+	| Fonts |
+	=======*/
+
+@font-face{
+	-family: Arvo;
+	src: url(../fonts/Arvo-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: Prototype;
+	src: url(../fonts/Prototype.ttf);
+}
+			
+@font-face{
+	font-family: RobotoSlab;
+	src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face{
+	font-family: Aller;
+	src: url(../fonts/Aller_Rg.ttf);
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: amicable;
+	src: url(../fonts/perfectly_amicable.ttf);
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: Comfortaa;
+	src: url(../fonts/Comfortaa-Regular.ttf);
+	font-weight: 500;
+}
+
+	/*=========
+	| General |
+	=========*/
+
+html, body{
+	font-family: Comfortaa, Aller;
+	color:#800C24;
+}
+
+h1{
+	font-size:4vmax;
+}
+
+	/*=======
+	| Class |
+	=======*/
+	
+.navbar{
+	background: #000;
+}
+
+.navimg{
+	height: 30px;
+	margin-top: -5px;
+}
+
+.navbar-brand{
+	font-family: amicable;
+	font-size: 35px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color:#fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus{
+	color:#000;
+	background: #fff;
+	transition-duration: 0.75s;
+}
+
+.intro-section,
+.igdc-section,
+.isc-section,
+.agricode-section,
+.agrihack-section,
+.seminar-section{
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.intro-section p,
+.igdc-section p,
+.isc-section p,
+.agricode-section p,
+.agrihack-section p,
+.seminar-section p{
+	font-size: 2vmax;
+}
+
+.main-icon>img{
+	width: 85%;
+	height: auto;
+	vertical-align: middle;
+} 
+
+.main-text>img{
+	width: 85%;
+	height: auto;
+	margin-top: 20%;
+}
+
+.main-text>p{
+	font-family:amicable;
+	font-size:5vmax;
+}
+
+.section-icon>img{
+	max-width: 70%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+} 
+
+.tanah-section img{
+	width: 70%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.btn-ittoday{
+	background-color: #800C24;
+	color:#fff;
+	position: relative;
+	left:30%;
+} 
+
+.row-login {
+	position:absolute;
+	color:#000;
+	top:50%;
+	left:50%;
+	padding:15px;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+
+	/*=======
+	| Media |
+	=======*/	             
+
+/* Kalo Butuh */
