@@ -16,7 +16,7 @@
 		
 		<!-- Title -->
 		<title>IT Today IPB 2016 | Grow Indonesia's Future with Technology</title>
-		<link rel="icon" sizes="192x192" href="img/main_icon.png">
+		<link rel="icon" href="img/favicon.ico">
 		
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
@@ -37,10 +37,18 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-
+	<?php if(empty($_GET['page'])) { ?>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<?php }else if(!empty($_GET['page'])){ ?>
+	<body>
+	<?php } ?>
 		<!-- Navigation -->
+		<?php if(!isset($_GET['page'])) { ?>
 		<nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse" role="navigation">
+		<? }else if(isset($_GET['page'])){  ?>
+		<nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse" role="navigation" style="border-radius:0">
+		<? } ?>
+
 			<div class="container-fluid">
 				<!-- Logo & Toggle Menu -->
 				<div class="navbar-header page-scroll">
@@ -62,17 +70,24 @@
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
 							<li><a class="page-scroll" href="#igdc-main">IGDC</a></li>
 							<li><a class="page-scroll" href="#isc-main">ISC</a></li>
-							<li><a class="page-scroll" href="#agricode-main">Agricode</a></li>
+							<li><a class="page-scroll" href="#digishare-main">Digital I-Share</a></li>
 							<li><a class="page-scroll" href="#agrihack-main">Agrihack</a></li>
 							<li><a class="page-scroll" href="#seminar-main">Seminar IT</a></li>
-						<?php }else if(!empty($_GET['page'])){ ?>
+						<?php }else if(!empty($_GET['page'])){ 
+							if($_GET['page'] === "isc") $iscclass="active"; else $iscclass="";
+							if($_GET['page'] === "igdc") $igdcclass="active"; else $igdclass="";
+							if($_GET['page'] === "digishare") $disclass="active"; else $disclass="";
+							if($_GET['page'] === "agrihack") $ahclass="active"; else $ahclass="";
+							if($_GET['page'] === "seminar") $semclass="active"; else $semclass="";
+							?>
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-							<li><a class="page-scroll" href="./#igdc-main">IGDC</a></li>
-							<li><a class="page-scroll" href="./#isc-main">ISC</a></li>
-							<li><a class="page-scroll" href="./#agricode-main">Agricode</a></li>
-							<li><a class="page-scroll" href="./#agrihack-main">Agrihack</a></li>
-							<li><a class="page-scroll" href="./#seminar-main">Seminar IT</a></li>
+							<li class="<?php echo $igdcclass ?>"><a class="page-scroll" href="igdc">IGDC</a></li>
+							<li class="<?php echo $iscclass ?>"><a class="page-scroll" href="isc">ISC</a></li>
+							<li class="<?php echo $disclass ?>"><a class="page-scroll" href="digishare">Digital I-Share</a></li>
+							<li class="<?php echo $ahclass ?>"><a class="page-scroll" href="agrihack">Agrihack</a></li>
+							<li class="<?php echo $semclass ?>"><a class="page-scroll" href="seminar">Seminar IT</a></li>
 						<?php } ?>
+							<li class="hidden"><a class="page-scroll" href="#tanah-main">Seminar IT</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<?php if(!cek_login()){ ?>
@@ -106,22 +121,23 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 
+		
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
+		<!-- Section JS -->
+		<script src="js/jquery-sectionsnap.js"></script>
 		<script src="js/scrolling-nav.js"></script>
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				function up() {
-					$("#bawah").animate({bottom: "-=30"}, 1500, "swing", down);
+					$("#bawah").animate({bottom: "-=20"}, 1500, "swing", down);
 				}
 				function down() {
-					$("#bawah").animate({bottom: "+=30"}, 1500, "swing", up);
+					$("#bawah").animate({bottom: "+=20"}, 1500, "swing", up);
 				}
 				down();
 			});
 		</script>
-		
-		<!-- Section JS -->
-		<script src="js/jquery-sectionsnap.js"></script>
 	</body>
 </html>

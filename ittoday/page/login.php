@@ -33,6 +33,10 @@
 		if(empty($_POST['setuju'])){
 			echo "<script>alert('Anda harus menyetujui ketentuan kami.');</script>";
 		}
+		if($_POST['password'] != $_POST['password2']){
+			echo "<script>alert('Konfirmasi Password tidak sama.');</script>";
+			
+		}else{
 
 		$email = $_POST['email'];
 		$password = md5($_POST['password']);
@@ -55,10 +59,11 @@
 		}
 		mysqli_free_result($cek);
 		mysqli_close($conn);
+		}
 	}
 ?>	
 		<section id="intro" class="intro-section page-section">
-			<div class="row-login" style="text-align:left;">
+			<div class="row-login">
 				<div class="col-md-5 col-md-offset-1">
 					<h2>Login</h2>
 					<form id="login" action="" method="post">
@@ -75,83 +80,16 @@
 					</form>
 				</div>
 				<div class="col-md-5">
-					<script>
-						function cekPass(){
-							var pass = document.getElementById('password_r');
-						
-							if(pass1.value == ""){
-								$('#pass_error2').hide();
-							}
-							else{
-								$('#pass_error2').show();
-							}
-						}
-
-						function valid(){
-							validasiEmail();
-							disabledT();
-						}
-
-						function validasiEmail(){
-							var email = $("#email_r").val();
-                    	
-							if(email == ""){
-								$("#email_error").hide();
-							}
-							else{
-								$("#email_error").show();
-							}
-
-							jQuery.ajax({
-								url: "./author/validasi.php",
-								data:{email: email},
-								async: false,  
-								type: "POST",
-								success:function(data){
-									$("#email_error").html(data);
-								},
-								error:function (){}
-							});
-                  
-						}
-
-						function cekPass2(){
-							var pass1 = document.getElementById('password_r');
-							var pass2 = document.getElementById('password2_r');
-
-							if(pass1.value == pass2.value){
-								document.getElementById('pass_error2').innerHTML = "Password Match";
-							}
-							else{
-								document.getElementById('pass_error2').innerHTML = "Password Doesn't Match";
-							}
-
-							if(pass2.value == ""){
-								$('#pass_error2').hide();
-							}
-							else{
-								$('#pass_error2').show();
-							}
-						}
-					</script>
+					<script src="js/reg.js" type="text/javascript"></script>
 					<h2>Registrasi</h2>
-					<form id="registrasi" action="" method="post">
+					<center><p>Pendaftaran akan dibuka tanggal 1 Juni 2016</p></center>
+					<form id="registrasi" action="" method="post" hidden>
 						<input type="hidden" name="registrasi" value="1"/>
 						<div class="form-group">
 							<label for="email_r">Email<span>*</span></label><br/>
-							<input type="email" class="form-control" name="email" onkeyup="valid()" id="email_r" required/>
-							<span id="email_error"></span>
+							<input type="email" class="form-control" name="email" onkeyup="validasiEmail()" onchange="validasiEmail(); disabledT()" id="email_r" required/>
+							<span id="email_error" onload="disabledT()"></span>
 						</div>
-						<script type="text/javascript">
-							function disabledT(){
-								if($("#email_error").html() != ""){
-									$("#registrasi_btn").attr("disabled",false);
-								}
-								else{
-									$("#registrasi_btn").attr("disabled",true);
-								}
-							}
-						</script>
 						<div class="form-group">
 							<label for="password_r">Password<span>*</span></label><br/>
 							<input type="password" class="form-control" name="password" id="password_r" required/>
@@ -161,8 +99,8 @@
 							<input type="password" class="form-control" name="password2" id="password2_r" onkeyup="cekPass2()" required/>
 							<div id='pass_error2' class='error'></div>
 						</div>
-						<input type="checkbox" id="field_terms" name="setuju" value="1" required> Saya bersedia mematuhi aturan main IT Today 2016<br/><br/>
-						<button type="submit" class="btn btn-danger" value="Proceed" id="registrasi_btn" >Proceed</button><br><br>
+						<input type="checkbox" id="field_terms" name="setuju" value="1" onclick="disabledT()" required> Saya menyetujui syarat dan ketentuan IT Today IPB 2016<br/><br/>
+						<button type="submit" class="btn btn-danger" value="Proceed" id="registrasi_btn" disabled="disabled">Proceed</button><br><br>
 					</form>
 				</div>
 			</div>

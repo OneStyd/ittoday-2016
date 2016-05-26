@@ -1,8 +1,7 @@
 /*!
- * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- * Modified by: Fadhlal K. Surado;
+@IT TODAY IPB 2016
+@Tim Web IT Today
+@Scrolling-Nav Bootstrap
  */
 
 body {
@@ -33,7 +32,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    background: url(../img/intro/awan1.png) 50% 0 no-repeat;
+    /*background: url(../img/intro/awan1.jpg) 50% 0 no-repeat;*/
     /*background-size: cover;*/
     position: relative;
     /*height: 100%;*/
@@ -41,10 +40,6 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     text-align: center;
     z-index: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     /*background: #fff;*/
 }
 
@@ -53,7 +48,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .igdc-section {
-    background: url(../img/igdc/awan2.png) center top no-repeat;
+    /*background: url(../img/igdc/awan2.jpg) center top no-repeat;*/
     /*background-size: cover;*/
     /*position: relative;*/
     /*height: 100%;*/
@@ -62,30 +57,22 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     /*background: #fff;*/
     z-index: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .isc-section {
-    background: url(../img/isc/awan3.png) center top no-repeat;
+    /*background: url(../img/isc/awan3.jpg) center top no-repeat;*/
     /*background-size: cover;*/
     /*position: relative;*/
     /*height: 100%;*/
     width: 100%;
     padding-top: 150px;
     text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     z-index: 0;
     /*background: #eee;*/
 }
 
-.agricode-section {
-    background: url(../img/agricode/awan4.png) center top no-repeat;
+.digishare-section {
+    /*background: url(../img/digishare/awan4.jpg) center top no-repeat;*/
     /*background-size: cover;*/
     /*position: relative;*/
     /*height: 100%;*/
@@ -94,14 +81,10 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     /*background: #fff;*/
     z-index: 1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .agrihack-section {
-    background: url(../img/agrihack/awan5.png) center top no-repeat;
+    /*background: url(../img/agrihack/awan5.jpg) center top no-repeat;*/
     /*background-size: cover;*/
     /*position: relative;*/
     /*height: 100%;*/
@@ -110,40 +93,28 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     /*background: #fff;*/
     z-index: 1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .seminar-section {
-    background: url(../img/seminar/dasar.png) center top no-repeat;
+    /*background: url(../img/seminar/dasar.jpg) center top no-repeat;*/
     /*position: relative;*/
     width:100%;
     /*height: 100%;*/
-    padding-top: 150px;
+    padding-top: 10%px;
     text-align: center;
     /*background: #eee;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .tanah-section {
-    background: url(../img/tanah.png) 50% 0 no-repeat;
+    /*background: url(../img/tanah.jpg) 50% 0 no-repeat;*/
     /*background-size: cover;*/
     position: relative;
-    /*height: 100%;*/
+    height: 100%;
     width:100%;
-    padding-top: 10%;
+    padding-top: 18%;
     padding-bottom: 5%;
     text-align: center;
     z-index: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     /*background: #fff;*/
 }
 
@@ -151,18 +122,103 @@ of those sections to manage the look and feel of the site. */
     padding-top: 5%;
 }
 
-@media(max-width: 640px){
-    .transition-section{
-        height:20%;
+@media(min-width: 768px){
+    .intro-section{
+        background: url(../img/intro/awan1.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .igdc-section{
+        background: url(../img/igdc/awan2.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .isc-section{
+        background: url(../img/isc/awan3.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .agrihack-section{
+        background: url(../img/agrihack/awan5.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .digishare-section{
+        background: url(../img/digishare/awan4.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .seminar-section{
+        background: url(../img/seminar/dasar.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .tanah-section {
+        background: url(../img/tanah.jpg) 50% 0 no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 }
 
-.down-arrow{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    padding-bottom:3.5%;
+@media(max-width: 768px){
+    .tanah-section{
+        background: url(../img/tanah.min.jpg) 50% 0 no-repeat;
+        background-size: cover;
+    }
+    .intro-section{
+        background: url(../img/intro/awan1.min.jpg) 50% 0 no-repeat;
+        background-size: 560px;
+    }
+    .igdc-section{
+        background: url(../img/igdc/awan2.min.jpg) 50% 0 no-repeat;
+        background-size: 560px;
+    }
+    .isc-section{
+        background: url(../img/isc/awan3.min.jpg) 50% 0 no-repeat;
+        background-size: 560px;
+    }
+    .agrihack-section{
+        background: url(../img/agrihack/awan5.min.jpg) 50% 0 no-repeat;
+        background-size: 560px;
+    }
+    .digishare-section{
+        background: url(../img/digishare/awan4.min.jpg) 20% 0 no-repeat;
+        background-size: 220px;
+    }
+    .seminar-section{
+        background: url(../img/seminar/dasar.min.jpg) 50% 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(min-width: 768px){
+    .down-arrow{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-bottom:10%;
+    }
+}
+
+@media(max-width: 768px){
+    .down-arrow{
+        position: relative;
+    }
 }
 
 .down-arrow > a{

@@ -1,12 +1,58 @@
+		<script type="text/javascript">
+			$(function(){
+			if($(window).width() < 768){
+			    	$('#logo_t').attr('src','img/logo_putih.png');
+			    	$('#logo_t').css('width','50%');
+			    	$('#logo_t').css('padding-top','20%');
+			    }
+			    else{
+			   	$('#logo_t').attr('src','img/logo.png');
+			   	$('#logo_t').css('width','85%');
+			   	$('#logo_t').css('padding-top','0');
+			    }
+
+			$(window).bind("resize",function(){
+			    console.log($(this).width())
+			    if($(this).width() < 768){
+			    	$('#logo_t').attr('src','img/logo_putih.png');
+			    	$('#logo_t').css('width','50%');
+			    	$('#logo_t').css('padding-top','20%');
+			    }
+			    else{
+			   	$('#logo_t').attr('src','img/logo.png');
+			   	$('#logo_t').css('width','85%');
+			   	$('#logo_t').css('padding-top','0');
+			    }
+			    
+			});
+			});
+		</script>
+		
+		<script>
+			$(window).scroll(function() {
+			   var hT = $('#igdc-start').offset().top,
+			       hH = $('#igdc-start').outerHeight(),
+			       nH = $('#isc-main').offset().top,
+			       wH = $(window).height(),
+			       wS = $(this).scrollTop();
+			    console.log((hT-wH), wS, (nH-wH));
+			   if (wS >= hT){
+			     $('#igdc-logo').addClass("bounceIn");
+			   }else if(wS > nH){
+			     $('#igdc-logo').removeClass("bounceIn");
+			   }
+			});
+		</script>
+		
 		<!-- Intro Section -->
 		<section id="intro" class="intro-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6" style="float: right">
-						<div class="main-text"><img src="img/logo.png"><p>#GrowIT</p></div>
+					<div class="col-md-6" style="float:right;">
+						<div class="main-text" id="logo_i"><img src="img/logo.png" id="logo_t"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
-					<div class="col-md-6" style="float: left">
-						<div class="main-icon"><img src="img/burung.png"></div>
+					<div class="col-md-6 intro-burung">
+						<div class="main-icon"><img src="img/burung.32colors.png"></div>
 					</div>
 				</div>
 			</div>
@@ -17,17 +63,16 @@
 
 		<!-- IGDC Section -->
 		<section id="igdc-main" class="igdc-section">
-			<div class="container">
+			<div class="container" id="igdc-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>IPB Game Developing Competition</h1>
-						<div class="section-icon"><img src="img/igdc/2.png"/></div>
+						<div class="section-icon"><img src="img/igdc/2.png" id="igdc-logo" class="animated"/></div>
 						<p>
-							Kegiatan berupa kompetisi antar-mahasiswa se-Jawa Barat dalam pembuatan game. 
-							Peserta akan diseleksi menjadi 10 tim terbaik untuk dapat mempresentasikan game di babak final. 
-							Seluruh tim pendaftar akan diundang ke acara final untuk menyaksikan para finalis IPB Game Dev Competition. 
+							IGDC (IPB Game Development Competition) merupakan ajang kompetisi pembuatan games untuk mahasiswa di Indonesia.
+							Kompetisi ini dapat diikuti oleh mahasiswa/pelajar di seluruh Indonesia yang memiliki passion dalam pengembangan aplikasi games. 
 						</p>
-						<button type="button" class="btn btn-ittoday">DETAIL</button>
+						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='igdc'">DETAIL</button>
 					</div>
 				</div>
 			</div>
@@ -41,38 +86,42 @@
 						<h1>IPB Searching Competition</h1>
 						<div class="section-icon"><img src="img/isc/3.png"/></div>
 						<p>
-							Kegiatan berupa kompetisi mencari informasi secara cepat dengan memanfaatkan fitur dari search engine. 
-							Pendaftaran dibuka untuk 100 peserta. Kegiatan ini bertemakan "Raising Your Searching Skill for Better Knowledge".
+							IPB Searching Competition merupakan kompetisi menjawab pertanyaan umum melalui bantuan Search Engine. Kompetisi ini bertujuan untuk meningkatkan kemampuan pencarian melalui mesin pencari dan memaksimalkan pengetahuan ataupun informasi yang yang didapat melalui mesin pencari.
+													
 						</p>
-						<button type="button" class="btn btn-ittoday">DETAIL</button>
+						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='isc'">DETAIL</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Agricode Section -->
-		<section id="agricode-main" class="agricode-section">
+		<!-- Digital I-Share Section -->
+		<section id="digishare-main" class="digishare-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1>Agricode - Competitive Programming</h1>
-						<div class="section-icon"><img src="img/agricode/4.png"/></div>
-						<p>Kegiatan berupa kompetisi pemrograman untuk siswa/i SMA sederajat dan diploma di seluruh indonesia.</p>
-						<button type="button" class="btn btn-ittoday">DETAIL</button>
+						<h1>Digital I-Share</h1>
+						<div class="section-icon"><img src="img/digishare/4.png"/></div>
+						<p>
+							Digital I-Share merupakan kompetisi penciptaan ide aplikasi untuk SMA/Sederajat, diploma, dan Mahasiswa S1 di seluruh Indonesia. Peserta akan berlomba menciptakan ide kreatif tentang aplikasi yang berguna untuk mengubah masa depan dunia.
+						</p>
+						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='digishare'">DETAIL</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Agrihack Section -->
-		<section id="agrihack-main" class="agricode-section">
+		<section id="agrihack-main" class="digishare-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>Agrihack - Capture The Flag</h1>
 						<div class="section-icon"><img src="img/agrihack/5.png"/></div>
-						<p>Kegiatan berupa kompetisi dibidang cyber security untuk SMA/sederajat dan Diploma di seluruh indonesia</p>
-						<button type="button" class="btn btn-ittoday">DETAIL</button>
+						<p>
+							Agrihack merupakan ajang kompetisi di bidang cyber security yaitu "Capture The Flag" untuk SMA/Sederajat dan Diploma di seluruh Indonesia. Peserta akan diminta mencari celah keamanan dari suatu objek untuk mendapatkan "flag".
+						</p>
+						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='agrihack'">DETAIL</button>
 					</div>
 				</div>
 			</div>
@@ -93,7 +142,7 @@
 							Showcase IGDC dapat dihadiri oleh mahasiswa se-IPB, mahasiswa seluruh Indonesia, dan masyarakat sekitar kampus IPB 
 							gratis tanpa pendaftaran.
 						</p>
-						<button type="button" class="btn btn-ittoday">DETAIL</button>
+						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='seminar'">DETAIL</button>
 					</div>
 				</div>
 			</div>
@@ -105,7 +154,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<img src="img/logo.png">
-						<p>Grow Indonesia's Future with Technology</p>
+						<p style="font-size:2vmax">Grow Indonesia's Future with Technology</p>
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 	$info = mysqli_fetch_assoc($user);
 ?>    
 		<section id="intro" class="intro-section page-section">
-            <div class="container" style="text-align:left">
+            <div class="container user-page">
                 <div class="col-md-5 col-md-offset-1">
                 	<?php 
 						if($info['nama_lengkap']==NULL && $info['no_hp']==NULL && $info['alamat']==NULL && 
@@ -56,7 +56,7 @@
 						} 
 					?>
 				</div>
-				<div class="col-md-5 col-md-offset-1">
+				<div class="col-md-5 col-md-offset-1" hidden>
 					<h2>PILIHAN ACARA</h2>
 					<form id="pilihan_acara" method="post" >
 						<input type="hidden" name="pilcar" value="<?php echo $info['id_user']; ?>"/>
@@ -68,13 +68,13 @@
 							<?php } ?>
 							<label for="pilcar">Anda boleh memilih lebih dari 1 acara:</label>
 							<h6>Jika masih bingung, Anda boleh langsung melewati tahapan ini</h6><br>
-							<label><input type="checkbox" name="agricode" id="agricode" <?php echo $disabled ?>> Agricode [Competitive Prgramming]</label><br/>
+							<label><input type="checkbox" name="digishare" id="digishare" <?php echo $disabled ?>> Digital I-Share</label><br/>
 							<script type="text/javascript">
-								$('#agricode').click(function() {
-									$('#agricode-set')[this.checked ? "show" : "hide"]();
+								$('#digishare').click(function() {
+									$('#digishare-set')[this.checked ? "show" : "hide"]();
 								});
 							</script>
-							<fieldset id="agricode-set" hidden>
+							<fieldset id="digishare-set" hidden>
 									<label for='ukuran_baju_ac'>Ukuran Baju</label><br/>
 			                        <select id="ukuran_baju_ac" name="ukuran_baju_ac" class="form-control">
 			                            <option>S</option>
@@ -85,7 +85,7 @@
 			                        </select><br>
 									<label class="control-label">Upload Identitas (Kartu Mahasiswa/KTP)
 									<h6>Maksimal 1 MB, format: .jpg atau .png</h6><br>
-									<input id="ktm_agricode" type="file" name="ktm_ac" class="file">					
+									<input id="ktm_digishare" type="file" name="ktm_ac" class="file">					
 									<br/>
 							</fieldset>
 							<label><input type="checkbox" name="agrihack" id="agrihack" <?php echo $disabled ?>> Agrihack [Capture The Flag]</label><br/>
