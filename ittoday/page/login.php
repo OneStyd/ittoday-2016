@@ -3,32 +3,6 @@
 		header("location: ./");
 	}
 
-	if(isset($_POST['login'])){
-		$email = $_POST['email'];
-
-		$stmt = $conn->prepare("SELECT id_user, password FROM ittoday WHERE email = ? LIMIT 1");
-
-		$stmt->bind_param("s", $email);
-		$stmt->execute();
-		$stmt->store_result();
-
-		$stmt->bind_result($user, $db_password);
-		$stmt->fetch();
-
-		$password = $_POST['password'];
-		if($stmt->num_rows==1){
-			if ($db_password == md5($password)){
-				$_SESSION['ittoday_user'] = $email;
-				echo '<script>window.location.href="./"</script>';
-			}
-			else
-				echo '<script>alert("login gagal: password tidak cocok");</script>';
-		}
-		else echo '<script>alert("login gagal: email atau password salah");</script>';
-
-		mysqli_close($conn);
-	}
-
 	if(isset($_POST['registrasi'])){
 		if(empty($_POST['setuju'])){
 			echo "<script>alert('Anda harus menyetujui ketentuan kami.');</script>";
@@ -61,29 +35,31 @@
 		mysqli_close($conn);
 		}
 	}
-?>	
+?>		
+		
 		<section id="intro" class="intro-section page-section">
 			<div class="row-login">
 				<div class="col-md-5 col-md-offset-1">
 					<h2>Login</h2>
 					<form id="login" action="" method="post">
-						<input type="hidden" name="login" value="1"/>
+						<div id="err_login"></div>
+						<!-- <input type="hidden" name="login" id="isLogin" value="1"/> -->
 						<div class="form-group">
 							<label for="email">Email</label><br/>
-							<input type="email" class="form-control" name="email" id="email" required/>
+							<input type="email" class="form-control" name="email" id="email"/>
 						</div>
 						<div class="form-group">
 							<label for="password">Password</label><br/>
-							<input type="password" class="form-control" name="password" id="password" required/>
+							<input type="password" class="form-control" name="password" id="password"/>
 						</div>
-						<button type="submit" class="btn btn-danger" value="Proceed">Proceed</button><br><br>
+						<button type="submit" id="btn-login" class="btn btn-danger" value="1">Proceed</button><br><br>
 					</form>
 				</div>
+				<script src="js/reg.js" type="text/javascript"></script>
 				<div class="col-md-5">
-					<script src="js/reg.js" type="text/javascript"></script>
 					<h2>Registrasi</h2>
-					<center><p>Pendaftaran akan dibuka tanggal 1 Juni 2016</p></center>
-					<form id="registrasi" action="" method="post" hidden>
+					<!-- <center><p>Pendaftaran akan dibuka tanggal 1 Juni 2016</p></center> -->
+					<form id="registrasi" action="" method="post">
 						<input type="hidden" name="registrasi" value="1"/>
 						<div class="form-group">
 							<label for="email_r">Email<span>*</span></label><br/>

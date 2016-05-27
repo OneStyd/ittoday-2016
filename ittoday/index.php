@@ -75,7 +75,7 @@
 							<li><a class="page-scroll" href="#seminar-main">Seminar IT</a></li>
 						<?php }else if(!empty($_GET['page'])){ 
 							if($_GET['page'] === "isc") $iscclass="active"; else $iscclass="";
-							if($_GET['page'] === "igdc") $igdcclass="active"; else $igdclass="";
+							if($_GET['page'] === "igdc") $igdcclass="active"; else $igdcclass="";
 							if($_GET['page'] === "digishare") $disclass="active"; else $disclass="";
 							if($_GET['page'] === "agrihack") $ahclass="active"; else $ahclass="";
 							if($_GET['page'] === "seminar") $semclass="active"; else $semclass="";
@@ -120,14 +120,68 @@
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
-
 		
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
 		<!-- Section JS -->
 		<script src="js/jquery-sectionsnap.js"></script>
 		<script src="js/scrolling-nav.js"></script>
-		
+		<script type="text/javascript">
+
+		var igdc = $('#igdc-main').offset().top - window.innerHeight/2;
+		var isc = $('#isc-main').offset().top - window.innerHeight/2;
+		var digishare = $('#digishare-main').offset().top - window.innerHeight/2;
+		var agrihack = $('#agrihack-main').offset().top - window.innerHeight/2;
+		var seminar = $('#seminar-main').offset().top - window.innerHeight/2;
+		var tanah = $('#tanah-main').offset.top - window.innerHeight/2;
+		$(document).load(function(){
+			$('#igdc-start').css("opacity","0");
+		});
+		$(document).ready(function(){
+			$(document).scroll(function(){
+			    	var pTop = $(window).scrollTop();
+			    	console.log( pTop + ' - ' + igdc );
+			    	console.log( pTop + ' - ' + isc );
+			    	console.log( pTop + ' - ' + digishare );
+			    	console.log( pTop + ' - ' + agrihack );
+			    	console.log( pTop + ' - ' + seminar );
+			    	console.log( pTop + ' - ' + tanah );
+			 		if(pTop<igdc){
+						$('#igdc-start').removeClass('fadeIn').addClass('fadeOut');
+						$('#igdc-start').css("opacity","0");
+			 		}else if(pTop > igdc && pTop < isc){
+			 			$('#igdc-start').removeClass('fadeOut').addClass('fadeIn');
+			 			$('#isc-start').removeClass('fadeIn').addClass('fadeOut');
+					}else if(pTop>isc && pTop < digishare){
+						$('#igdc-start').removeClass('fadeIn').addClass('fadeOut');
+						$('#isc-start').removeClass('fadeOut').addClass('fadeIn');
+						$('#digishare-start').removeClass('fadeIn').addClass('fadeOut');
+					}else if(pTop>digishare && pTop<agrihack){
+						$('#isc-start').removeClass('fadeIn').addClass('fadeOut');
+						$('#digishare-start').removeClass('fadeOut').addClass('fadeIn');
+						$('#agrihack-start').removeClass('fadeIn').addClass('fadeOut');
+					}else if(pTop>agrihack && pTop<seminar){
+						$('#digishare-start').removeClass('fadeIn').addClass('fadeOut');
+						$('#agrihack-start').removeClass('fadeOut').addClass('fadeIn');
+						$('#seminar-logo').removeClass('slideInDown').addClass('fadeOut');
+					}else{
+						$('#agrihack-start').removeClass('fadeIn').addClass('fadeOut');
+						$('#seminar-logo').removeClass('fadeOut').addClass('slideInDown');
+					}
+					//alert(pTop);
+			});
+		});
+
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('#section-masuk').addClass('fadeIn');
+
+				$('#burung32').addClass('bounceInLeft');
+				$('#logo_i').addClass('bounceInRight');
+			})
+		</script>
+
 		<script type="text/javascript">
 			$(document).ready(function() {
 				function up() {

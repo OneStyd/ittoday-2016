@@ -19,40 +19,24 @@
 			    	$('#logo_t').css('padding-top','20%');
 			    }
 			    else{
-			   	$('#logo_t').attr('src','img/logo.png');
-			   	$('#logo_t').css('width','85%');
-			   	$('#logo_t').css('padding-top','0');
+			   		$('#logo_t').attr('src','img/logo.png');
+			   		$('#logo_t').css('width','85%');
+			   		$('#logo_t').css('padding-top','0');
 			    }
 			    
 			});
 			});
 		</script>
 		
-		<script>
-			$(window).scroll(function() {
-			   var hT = $('#igdc-start').offset().top,
-			       hH = $('#igdc-start').outerHeight(),
-			       nH = $('#isc-main').offset().top,
-			       wH = $(window).height(),
-			       wS = $(this).scrollTop();
-			    console.log((hT-wH), wS, (nH-wH));
-			   if (wS >= hT){
-			     $('#igdc-logo').addClass("bounceIn");
-			   }else if(wS > nH){
-			     $('#igdc-logo').removeClass("bounceIn");
-			   }
-			});
-		</script>
-		
 		<!-- Intro Section -->
 		<section id="intro" class="intro-section">
-			<div class="container">
+			<div class="container animated">
 				<div class="row">
 					<div class="col-md-6" style="float:right;">
-						<div class="main-text" id="logo_i"><img src="img/logo.png" id="logo_t"/><p class="intro-teks">#GrowIT</p></div>
+						<div class="main-text animated" id="logo_i"><img src="img/logo.png" id="logo_t"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
 					<div class="col-md-6 intro-burung">
-						<div class="main-icon"><img src="img/burung.32colors.png"></div>
+						<div class="main-icon animated" id="burung32"><img src="img/burung.32colors.png"></div>
 					</div>
 				</div>
 			</div>
@@ -63,11 +47,11 @@
 
 		<!-- IGDC Section -->
 		<section id="igdc-main" class="igdc-section">
-			<div class="container" id="igdc-start">
+			<div class="container animated" id="igdc-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>IPB Game Developing Competition</h1>
-						<div class="section-icon"><img src="img/igdc/2.png" id="igdc-logo" class="animated"/></div>
+						<div class="section-icon"><img src="img/igdc/2.png" id="igdc-logo"/></div>
 						<p>
 							IGDC (IPB Game Development Competition) merupakan ajang kompetisi pembuatan games untuk mahasiswa di Indonesia.
 							Kompetisi ini dapat diikuti oleh mahasiswa/pelajar di seluruh Indonesia yang memiliki passion dalam pengembangan aplikasi games. 
@@ -80,7 +64,7 @@
 
 		<!-- ISC Section -->
 		<section id="isc-main" class="isc-section">
-			<div class="container">
+			<div class="container animated" id="isc-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>IPB Searching Competition</h1>
@@ -97,7 +81,7 @@
 
 		<!-- Digital I-Share Section -->
 		<section id="digishare-main" class="digishare-section">
-			<div class="container">
+			<div class="container animated" id="digishare-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>Digital I-Share</h1>
@@ -112,8 +96,8 @@
 		</section>
 
 		<!-- Agrihack Section -->
-		<section id="agrihack-main" class="digishare-section">
-			<div class="container">
+		<section id="agrihack-main" class="agrihack-section">
+			<div class="container animated" id="agrihack-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>Agrihack - Capture The Flag</h1>
@@ -129,13 +113,13 @@
 
 		<!-- Seminar Section -->
 		<section id="seminar-main" class="seminar-section">
-			<div class="container">
+			<div class="container" id="seminar-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>Seminar Nasional</h1>
-						<div class="section-icon"><img src="img/seminar/6.png"/></div>
+						<div class="section-icon animated" id="seminar-logo"><img src="img/seminar/6.png"/></div>
 						<p>
-							Kegiatan puncak dari IT Today 2015 yang terdiri dari Seminar dan Showcase IGDC. 
+							Kegiatan puncak dari IT Today 2016 yang terdiri dari Seminar dan Showcase IGDC. 
 							Seminar bertemakan "The Future of Technology Devices".
 						</p>
 						<p>
@@ -150,7 +134,7 @@
 
 		<!-- Tanah Section -->
 		<section id="tanah-main" class="tanah-section">
-			<div class="container">
+			<div class="container animated" id="tanah-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<img src="img/logo.png">

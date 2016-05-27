@@ -1,26 +1,28 @@
 		<!-- Intro Section -->
-
+		<div class="spacer">&nbsp;</div>
 		<section id="intro" class="page-section">
-			<div class="container">
+			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
-					<div class="col-md-12">
+					<div class="col-md-12 informasi">
 					<!-- <div class="col-md-6" style="float:right;">
 						<div class="main-text"><img class="intro-logo"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
 					<div class="col-md-6 intro-burung">
 						<div class="main-icon"><img src="img/burung.32colors.png"></div>
 					</div> -->
-						<h1>Deskripsi</h1>
+						<h2><i class="fa fa-file-text"></i> Deskripsi</h2>
+						<img src="img/agrihack/agrihack_2015.png" class="img-informasi">
 						<p>
-							Agrihack merupakan ajang kompetisi dibidang cyber security untuk SMA Se-derajat dan Diploma di seluruh Indonesia. 
-							Agrihack merupakan salah satu rangkaikan kompetisi yang diselenggrakan IT Today 2016. Berkolaborasi dengan 
+							Agrihack CTF merupakan ajang kompetisi dibidang cyber security untuk SMA Se-derajat dan Diploma di seluruh Indonesia. 
+							Agrihack CTF merupakan salah satu rangkaikan kompetisi yang diselenggrakan IT Today 2016. Berkolaborasi dengan 
 							komunitas CSI (Cyber Security IPB) diharapkan meningkatkan ketertarikan generasi muda Indonesia terhadap dunia 
 							cyber security dan membawa nama Indonesia ke kancah dunia.
-							<br/><br/>
+							<div><button type="button" onclick="window.location.href='user'" class="btn btn-danger">Daftar Sekarang</button></div>
+							<br/><br/><div class="clearfix"></div>
 							<!-- Tema: “Change The Future of The World with Idea and Creative Inovation”<br/>
 							Slogan: #ChangeTheFuture -->
-						</p>
-	<!-- 					<h1>Tahapan Perlombaan</h1>
+						</p><div class="clearfix"></div>
+	<!-- 					<h2>Tahapan Perlombaan</h2>
 						<p style="infos">
 							<ul>
 								<li>Pendaftaran Online</li>
@@ -39,13 +41,16 @@
 								</ul>
 							</ul>
 						</p> -->
-						<h1>Hadiah</h1>
+						<h2><i class="fa fa-money"></i> Hadiah</h2>
 						<p>
-							Juara 1: 4.000.000+Sertifikat+Piala<br/>
-							Juara 2: 3.000.000+Sertifikat+Piala<br/>
-							Juara 3: 2.000.000+Sertifikat+Piala<br/>
+							<table>
+							<tr><td>Juara 1&nbsp;</td><td>: Rp 4.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 2&nbsp;</td><td>: Rp 3.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 3&nbsp;</td><td>: Rp 2.000.000,00 + Sertifikat + Piala</td></tr>
+							</table>
 						</p>
 					</div>
 				</div>
+				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
 			</div>
 		</section>

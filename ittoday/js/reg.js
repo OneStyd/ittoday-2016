@@ -1,3 +1,31 @@
+//function validateLogin(){
+	$("#btn-login").click(function(event){
+	  var login = $("#btn-login").val();
+      var email = $("#email").val();
+      var password = $("#password").val();
+
+      event.preventDefault();
+      $.ajax({
+        url: "./author/login_proc.php",
+        type: "POST",
+        data: {login: login, email:email, password: password},
+        success: function(data){
+          if(data == 'errno200'){
+            //event.preventDefault();
+            $("#err_login").html("<div class='alert alert-warning alert-dismissible'>Invalid Login: Password salah</div>");
+            // alert("wrongpass");
+          }else if(data == 'errno201'){
+            $("#err_login").html("<div class='alert alert-warning alert-dismissible'>Invalid Login: Anda belum terdaftar</div>");
+          }else if(data == 'errno202'){
+            $("#err_login").html("<div class='alert alert-danger alert-dismissible'>Invalid Login: No Input</div>");
+          }else{
+            window.location.href="./user";
+          }
+        }
+      });
+  });
+//}
+
 function cekPass(){
 	var pass = document.getElementById('password_r');
 

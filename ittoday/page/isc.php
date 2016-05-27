@@ -1,28 +1,30 @@
 		<!-- Intro Section -->
-
+		<div class="spacer">&nbsp;</div>
 		<section id="intro" class="page-section">
-			<div class="container">
+			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
-					<div class="col-md-12">
+					<div class="col-md-12 informasi">
 					<!-- <div class="col-md-6" style="float:right;">
 						<div class="main-text"><img class="intro-logo"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
 					<div class="col-md-6 intro-burung">
 						<div class="main-icon"><img src="img/burung.32colors.png"></div>
 					</div> -->
-						<h1>Deskripsi</h1>
-						<center><img src="img/isc/isc_2015.jpg" style="max-width:50%;padding-bottom:10px;"></center>
+						<h2><i class="fa fa-file-text"></i> Deskripsi</h2>
+						<img src="img/isc/isc_2015.jpg" class="img-informasi">
 						<p>
 							ISC 2016 merupakan kompetisi menjawab pertanyaan-pertanyaan melalui bantuan Search Engine. 
 							Kebutuhan akan mencari informasi melalui mesin pencari sudah sangat populer bahkan menjadi kebutuhan 
 							masyarkat zaman sekarang. Hal itu membuat kompetisi sangat menarik dan layak diikuti sebagai upaya 
 							meningkatkan kemampuan pencarian melalui mesin pencari dan memaksimalkan pengetahuan ataupun informasi 
 							yang yang didapat melalui mesin pencari.
-							<br/><br/>
+							<div><button type="button" onclick="window.location.href='user'" class="btn btn-danger">Daftar Sekarang</button></div>
+							<br/><br/><div class="clearfix"></div>
 							Tema: “Raising Your Searching Skill for Better Knowledge”<br/>
 							Slogan: “Challenging Your Searching Skill for Better Knowledge!”
 						</p>
-						<h1>Tahapan Perlombaan</h1>
+						<div class="clearfix"></div>
+						<h2><i class="fa fa-calendar-o"></i> Tahapan Perlombaan</h2>
 						<p style="infos">
 							<ul>
 								<li>Tahapan Pendaftaran</li>
@@ -37,13 +39,16 @@
 								</ul>
 							</ul>
 						</p>
-						<h1>Hadiah</h1>
+						<h2><i class="fa fa-money"></i> Hadiah</h2>
 						<p>
-							Juara 1	: 3.000.000+Sertifikat+Piala<br/>
-							Juara 2	: 2.000.000+Sertifikat+Piala<br/>
-							Juara 3	: 1.000.000+Sertifikat+Piala<br/>
+							<table>
+							<tr><td>Juara 1&nbsp;</td><td>: Rp 3.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 2&nbsp;</td><td>: Rp 2.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 3&nbsp;</td><td>: Rp 1.000.000,00 + Sertifikat + Piala</td></tr>
+							</table>
 						</p>
 					</div>
 				</div>
+				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
 			</div>
 		</section>

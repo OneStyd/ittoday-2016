@@ -1,16 +1,19 @@
 		<!-- Intro Section -->
 
+
+		<div class="spacer">&nbsp;</div>
 		<section id="intro" class="page-section">
-			<div class="container">
+			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
-					<div class="col-md-12">
+					<div class="col-md-12 informasi">
 					<!-- <div class="col-md-6" style="float:right;">
 						<div class="main-text"><img class="intro-logo"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
 					<div class="col-md-6 intro-burung">
 						<div class="main-icon"><img src="img/burung.32colors.png"></div>
 					</div> -->
-						<h1>Deskripsi</h1>
+						<h2><i class="fa fa-file-text"></i> Deskripsi</h2>
+						<img src="img/seminar/seminar_2015.jpg" class="img-informasi">
 						<p>
 							National Seminar IT Today 2016 merupakan acara puncak dari rangkaian acara di IT Today 2016 ini. 
 							Seminar tahun ini menghadirkan pembicara – pembicara luar biasa dalam bidang IT di Indonesia. 
@@ -19,35 +22,29 @@
 							Talk Show dengan CEO-CEO Startup muda Indonesia, dan akan workshop IT sebagai bentuk peran aktif 
 							IT Today 2016 mengenalkan teknologi kepada masyarakat luas sehingga diharapkan masyarakat Indonesia 
 							bisa mengenal lebih baik teknologi dan membawa dampak positif dalam perkembangan IT di Indonesia.
-							<br/><br/>
-							Tema: “Change The Future of The World with Idea and Creative Inovation”<br/>
+							<br/><br/><div class="clearfix"></div>
+							Tema: “Grow Indonesia's Future With Technology”<br/>
 							Slogan: #ChangeTheFuture
 						</p>
-						<h1>Tema Umum: Grow Indonesia's Future with Technology</h1>
+						<div class="clearfix"></div>
+					<!-- 	<h2>Tema Umum</h2>
 						<p style="infos">
-							<ul>
-								<li>Tema Sesi I [Keynote Speaker]: “Raising Knowledge of Artificial Intelligence Technology for A Perfect Impact in Indonesia”</li>
-								<ul>
-									<li>Presiden Direktur IBM Indonesia, Gunawan Susanto</li>
-								</ul>
-								<li>Tema Sesi II [CEO Talk Show]: “Build Creative Inovation for Indonesian Generation Through Startup”</li>
-								<ul>
-									<li>CEO Tokopedia, William Tanuwijaya (CEO Startup Of The Year 2015)</li>
-									<li>CEO iGrow (Agricultural Startup), Andreas Senjaya</li>
-								</ul>
-								<li>Tema Sesi III [Seminar &amp; Workshop] from Intel Inc. or Samsung ID.: “What is a Virtual World and How Can It Be Used for Education?”</li>
-							</ul>
-						</p>
-						<h1>Mekanisme Pendaftaran</h1>
-						<p>
-							Pendaftaran: 1 Juni - 10 September<br/>
-							Biaya: 40k/orang<br/>
-							Tata Cara Pendaftaran<br/>
+							Grow Indonesia's Future with Technology
+						</p> -->
+						<h2><i class="fa fa-info-circle"></i> Informasi Pendaftaran</h2>
+						<p>	
+							<table>
+							<tr><td>Daftar Online&nbsp;</td><td>: 1 Juni - 10 September</td></tr>
+							<tr><td>Biaya&nbsp;</td><td>: Rp. 40.000,00 per Orang</td></tr>
+							</table>
+							<button type="button" onclick="window.location.href='user'" class="btn btn-danger">Daftar Sekarang</button>
+							<!-- 
 								•	Mengisi form online di web IT Today 2016 dan membayar biaya pendaftaran via transfer bank atau membayar langsung ke panitia<br/>
 								•	Membeli tiket di stand IT Today 2016 yang telah disediakan<br/>
-								•	Peserta akan mendapatkan tiket masuk Seminar IT Today 2016<br/>
+								•	Peserta akan mendapatkan tiket masuk Seminar IT Today 2016<br/> -->
 						</p>
 					</div>
 				</div>
+				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
 			</div>
 		</section>

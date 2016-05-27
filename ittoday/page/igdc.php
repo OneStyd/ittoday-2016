@@ -1,16 +1,17 @@
 		<!-- Intro Section -->
-
+		<div class="spacer">&nbsp;</div>
 		<section id="intro" class="page-section">
-			<div class="container">
+			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
-					<div class="col-md-12">
+					<div class="col-md-12 informasi">
 					<!-- <div class="col-md-6" style="float:right;">
 						<div class="main-text"><img class="intro-logo"/><p class="intro-teks">#GrowIT</p></div>
 					</div>
 					<div class="col-md-6 intro-burung">
 						<div class="main-icon"><img src="img/burung.32colors.png"></div>
 					</div> -->
-						<h1>Deskripsi</h1>
+						<h2><i class="fa fa-file-text"></i> Deskripsi</h2>
+						<img src="img/igdc/igdc_2015.jpg" class="img-informasi">
 						<p>
 							IGDC (IPB Game Development Competition) merupakan ajang kompetisi pembuatan games untuk 
 							mahasiswa di Indonesia. IGDC (IPB Game Development Competition) diselenggarakan sebagai 
@@ -19,16 +20,17 @@
 							Kompetisi ini akan diikuti oleh mahasiswa/pelajar yang aktif berkecimpung dalam pengembangan 
 							aplikasi games di seluruh Indonesia. Diharapkan dari kompetisi ini kita bisa menunjukkan bahwa 
 							games buatan Indonesia saat ini sudah semakin baik dan berkualitas.
-							<br/><br/>
+							<div><button type="button" onclick="window.location.href='user'" class="btn btn-danger">Daftar Sekarang</button></div>
+							<br/><br/><div class="clearfix"></div>
 							Tema: “Build Indonesia’s Future Generation with Creative Idea and New Inovation”<br/>
 							Slogan: “Build Yourself as Creative as You are with Games!”
-						</p>
-						<h1>Tahapan Perlombaan</h1>
+						</p><div class="clearfix"></div>
+						<h2><i class="fa fa-calendar-o"></i> Tahapan Perlombaan</h2>
 						<p style="infos">
 							<ul>
 								<li>Pendaftaran dan Mekanisme</li>
 								<ul>
-									<li>Pendaftaran: 12 Mei – 13 Agustus 2016</li>
+									<li>Pendaftaran: 1 Juni – 13 Agustus 2016</li>
 									<li>Batas Pengumpulan Video: 23 Agustus 2016</li>
 									<li>Batas Submit Appstore: 27 Agustus 2016 </li>
 									<li>Seleksi 10 Besar: 28 -  3 Agustus 2016</li>
@@ -42,14 +44,17 @@
 								</ul>
 							</ul>
 						</p>
-						<h1>Hadiah</h1>
+						<h2><i class="fa fa-money"></i> Hadiah</h2>
 						<p>
-							Juara 1		: 5.000.000+Sertifikat+Piala<br/>
-							Juara 2		: 3.000.000+Sertifikat+Piala<br/>
-							Juara 3		: 2.000.000+Sertifikat+Piala<br/>
-							Juara Favorit	: 500.000+Sertifikat+Bingkisan<br/>
+							<table>
+							<tr><td>Juara 1&nbsp;</td><td>: Rp 5.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 2&nbsp;</td><td>: Rp 3.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara 3&nbsp;</td><td>: Rp 2.000.000,00 + Sertifikat + Piala</td></tr>
+							<tr><td>Juara Favorit&nbsp;</td><td>: Rp 500.000,00 + Sertifikat + Bingkisan</td></tr>
+							</table>
 						</p>
 					</div>
 				</div>
+				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
 			</div>
 		</section>

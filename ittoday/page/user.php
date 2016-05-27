@@ -1,6 +1,25 @@
 <?php
 	$user = mysqli_query($conn, "SELECT * FROM ittoday WHERE email = '".$_SESSION['ittoday_user']."'");
 	$info = mysqli_fetch_assoc($user);
+	
+	if(isset($_POST['registrasi'])){
+		$id = $info['id_user'];
+		$nama=$_POST['nama_lengkap'];
+		$hp = $_POST['no_hp'];
+		$alamat = $_POST['alamat'];
+		$identitas = $_POST['identitas'];
+		$institusi = $_POST['institusi'];
+		$tahun_masuk = $_POST['tahun_masuk'];
+
+		$update = mysqli_query($conn, "UPDATE ittoday SET nama_lengkap='$nama', no_hp='$hp', alamat='$alamat', no_identitas='$identitas', institusi='$institusi',tahun_masuk='$tahun_masuk' WHERE id_user='$id'") or die(mysqli_eror());
+		if($update){
+			echo "<script>alert('Update berhasil')</script>";
+
+		}else{
+			echo "<script>alert('Update gagal')</script>";
+		}
+	}
+
 ?>    
 		<section id="intro" class="intro-section page-section">
             <div class="container user-page">
@@ -136,5 +155,4 @@
 				</div>
             </div>
 		</section>
-
 
