@@ -47,7 +47,7 @@
 
 		<!-- IGDC Section -->
 		<section id="igdc-main" class="igdc-section">
-			<div class="container animated" id="igdc-start">
+			<div class="container animated" id="igdc-start" style="opacity: 0">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1>IPB Game Developing Competition</h1>
@@ -143,3 +143,6 @@
 				</div>
 			</div>
 		</section>
+		<script>
+
+		</script>

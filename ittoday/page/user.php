@@ -1,4 +1,7 @@
 <?php
+	if(empty($_SESSION['ittoday_user'])){
+		header("location: ./login");
+	}
 	$user = mysqli_query($conn, "SELECT * FROM ittoday WHERE email = '".$_SESSION['ittoday_user']."'");
 	$info = mysqli_fetch_assoc($user);
 	

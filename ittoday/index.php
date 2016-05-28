@@ -68,6 +68,7 @@
 					<ul class="nav navbar-nav">
 						<?php if(empty($_GET['page'])){ ?>
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+							<li><a class="page-scroll" href="http://blog.ittoday.web.id">News</a></li>
 							<li><a class="page-scroll" href="#igdc-main">IGDC</a></li>
 							<li><a class="page-scroll" href="#isc-main">ISC</a></li>
 							<li><a class="page-scroll" href="#digishare-main">Digital I-Share</a></li>
@@ -81,6 +82,7 @@
 							if($_GET['page'] === "seminar") $semclass="active"; else $semclass="";
 							?>
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+							<li><a class="page-scroll" href="http://blog.ittoday.web.id">News</a></li>
 							<li class="<?php echo $igdcclass ?>"><a class="page-scroll" href="igdc">IGDC</a></li>
 							<li class="<?php echo $iscclass ?>"><a class="page-scroll" href="isc">ISC</a></li>
 							<li class="<?php echo $disclass ?>"><a class="page-scroll" href="digishare">Digital I-Share</a></li>
@@ -127,18 +129,19 @@
 		<script src="js/jquery-sectionsnap.js"></script>
 		<script src="js/scrolling-nav.js"></script>
 		<script type="text/javascript">
-
+		$(window).bind("load", function() {
+			   // code goes here
+	
 		var igdc = $('#igdc-main').offset().top - window.innerHeight/2;
 		var isc = $('#isc-main').offset().top - window.innerHeight/2;
 		var digishare = $('#digishare-main').offset().top - window.innerHeight/2;
 		var agrihack = $('#agrihack-main').offset().top - window.innerHeight/2;
 		var seminar = $('#seminar-main').offset().top - window.innerHeight/2;
 		var tanah = $('#tanah-main').offset.top - window.innerHeight/2;
-		$(document).load(function(){
-			$('#igdc-start').css("opacity","0");
-		});
-		$(document).ready(function(){
+		//$('#igdc-start').css("opacity","0");
+
 			$(document).scroll(function(){
+			
 			    	var pTop = $(window).scrollTop();
 			    	console.log( pTop + ' - ' + igdc );
 			    	console.log( pTop + ' - ' + isc );
@@ -148,7 +151,7 @@
 			    	console.log( pTop + ' - ' + tanah );
 			 		if(pTop<igdc){
 						$('#igdc-start').removeClass('fadeIn').addClass('fadeOut');
-						$('#igdc-start').css("opacity","0");
+						//$('#igdc-start').css('opacity', '0 !important');
 			 		}else if(pTop > igdc && pTop < isc){
 			 			$('#igdc-start').removeClass('fadeOut').addClass('fadeIn');
 			 			$('#isc-start').removeClass('fadeIn').addClass('fadeOut');
