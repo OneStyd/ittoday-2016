@@ -23,7 +23,7 @@
 			$daftar = mysqli_query($conn, "INSERT INTO ittoday (email, password) VALUES('$email', '$password')") or die(mysqli_error());
 
 			if($daftar){
-				// session_start();
+				session_start();
 				$_SESSION['ittoday_user'] = $email;
 				echo "<script>window.location.href='user';</script>";
 			}else{
