@@ -307,8 +307,79 @@ form label span{
 	}
 }
 	
-	/*=======
-	| Media |
-	=======*/	             
+	/*======
+	| User |
+	======*/	             
 
-/* Kalo Butuh */
+.pp-user {
+	text-align: center;
+}
+
+.pp-user img {
+	width: 150px;
+	height: 150px;
+	border: 2px solid #800C24;
+	border-radius: 50%;
+}
+
+.pp-user a {
+	vertical-align: bottom;
+	color: #800C24; 
+}
+
+.name-user a {
+	color: #800C24;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.voucher {
+	padding-top: 10px;
+}
+
+@media (max-width: 768px){
+	.voucher button {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+}
+
+.eventbutton {
+	background: #d9534f;
+	border-radius: 5px;
+	padding: 2px 5px;
+	margin: 10px 0px 0px 0px;
+}
+
+.eventbutton h5 {
+	font-weight: 800;
+	text-align: center;
+	color: #FFF;
+}
+
+.eventbutton:hover{
+	background: #C9302C;
+}
+
+.eventdetail {
+	background: #FFC7C8;
+	border: 3px solid #d9534f;
+	border-top: none;
+	border-radius: 0px 0px 10px 10px;
+	padding: 10px 10px 0px 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.eventdetail button {
+	float: none;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.payment {
+	font-weight: 800;
+	padding-top: 10px;
+}
