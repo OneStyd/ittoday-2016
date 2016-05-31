@@ -41,6 +41,7 @@
 	}
 
 	if(isset($_POST['updatefoto'])){
+		$nim = $info['no_identitas'];
 		$id = $info['id_user'];
 		$dir = "img/user";
 		$file_size = $_FILES["fotobaru"]["size"];

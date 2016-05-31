@@ -142,7 +142,7 @@ INSERT INTO `ittoday` (`id_user`, `nama_lengkap`, `email`, `password`, `no_hp`, 
 (3, 'Feby Tri Saputra', 'febytri.saputra@gmail.com', '39907b3c541e066b8fda044731049cce', '08999627017', 'Semplak', 'G64140047', 'IPB', 2016, 'img/user/default.png 	'),
 (4, 'Wawan Setyadi', 'wawan.setyadi@gmail.com', 'f2e7a38f5dd3d4befb660f9dc916cba4', '808213912391', 'Tajur', 'G64140088', 'IPB', 2014, 'img/user/default.png 	'),
 (5, 'Rizqi alif', 'alifahasni.rizqi@gmail.com', '32c306b6079c0c5161e08b10d5e32eeb', '082220922296', 'bara 4', 'g64140006', 'IPB', 2014, 'img/user/default.png 	'),
-(6, 'Ado Bule German', 'ado.bule@gmail.com', '043077e2abaec8b0b1999e04cdfbceea', '081666999690', 'NCC', '0764140001', 'IPB', 2014, 'img/user/.jpg');
+(6, 'Ado Bule German', 'ado.bule@gmail.com', '043077e2abaec8b0b1999e04cdfbceea', '081666999690', 'NCC', '0764140001', 'IPB', 2014, 'img/user/0764140001.jpg');
 
 -- --------------------------------------------------------
 
