@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2016 at 01:02 PM
+-- Generation Time: May 31, 2016 at 03:59 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.6.15
 
@@ -23,42 +23,50 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `agricode`
---
-
-CREATE TABLE `agricode` (
-  `id_peserta` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL,
-  `ukuran_baju` varchar(4) DEFAULT NULL,
-  `kartu_mahasiswa` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `agricode`
---
-
-INSERT INTO `agricode` (`id_peserta`, `id_user`, `ukuran_baju`, `kartu_mahasiswa`) VALUES
-(3, 13, 'L', 'file/agricode/Tulips.jpg');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `agrihack`
 --
 
 CREATE TABLE `agrihack` (
-  `id_peserta` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL,
-  `ukuran_baju` varchar(4) DEFAULT NULL,
-  `kartu_mahasiswa` varchar(100) DEFAULT NULL
+  `id_peserta` int(255) NOT NULL,
+  `id_ketua` int(255) NOT NULL,
+  `tim` varchar(255) NOT NULL,
+  `anggota1` varchar(255) DEFAULT NULL,
+  `anggota2` varchar(255) DEFAULT NULL,
+  `kartu_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `agrihack`
 --
 
-INSERT INTO `agrihack` (`id_peserta`, `id_user`, `ukuran_baju`, `kartu_mahasiswa`) VALUES
-(3, 13, 'L', 'file/agrihack/Hydrangeas.jpg');
+INSERT INTO `agrihack` (`id_peserta`, `id_ketua`, `tim`, `anggota1`, `anggota2`, `kartu_id`) VALUES
+(1, 6, 'dragonforce', 'rado', 'wawan', 'img/identitas/agrihack/0764140001_identitas.pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `digishare`
+--
+
+CREATE TABLE `digishare` (
+  `id_peserta` int(255) NOT NULL,
+  `id_ketua` int(255) NOT NULL,
+  `tim` varchar(255) NOT NULL,
+  `anggota1` varchar(255) DEFAULT NULL,
+  `anggota2` varchar(255) DEFAULT NULL,
+  `kategori` varchar(255) NOT NULL,
+  `judul` text NOT NULL,
+  `deskripsi` text NOT NULL,
+  `proposal` varchar(255) NOT NULL,
+  `kartu_id` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digishare`
+--
+
+INSERT INTO `digishare` (`id_peserta`, `id_ketua`, `tim`, `anggota1`, `anggota2`, `kategori`, `judul`, `deskripsi`, `proposal`, `kartu_id`) VALUES
+(1, 6, 'dragonforce', 'rado', 'wawan', 'mulgame', 'pewdiepie', 'hahaha', 'img/identitas/digishare/0764140001_proposal.pdf', 'img/identitas/digishare/0764140001_identitas.pdf');
 
 -- --------------------------------------------------------
 
@@ -67,22 +75,24 @@ INSERT INTO `agrihack` (`id_peserta`, `id_user`, `ukuran_baju`, `kartu_mahasiswa
 --
 
 CREATE TABLE `igdc` (
-  `id_peserta` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL,
-  `nama_tim` varchar(100) NOT NULL,
-  `anggota_1` varchar(100) DEFAULT NULL,
-  `id_anggota_1` varchar(100) DEFAULT NULL,
-  `anggota_2` varchar(100) DEFAULT NULL,
-  `id_anggota_2` varchar(100) DEFAULT NULL,
-  `identitas_tim` varchar(100) DEFAULT NULL
+  `id_peserta` int(255) NOT NULL,
+  `id_ketua` int(255) NOT NULL,
+  `tim` varchar(255) NOT NULL,
+  `anggota1` varchar(255) DEFAULT NULL,
+  `anggota2` varchar(255) DEFAULT NULL,
+  `judul` varchar(255) NOT NULL,
+  `deskripsi` text NOT NULL,
+  `video` varchar(255) NOT NULL,
+  `game` varchar(255) NOT NULL,
+  `kartu_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `igdc`
 --
 
-INSERT INTO `igdc` (`id_peserta`, `id_user`, `nama_tim`, `anggota_1`, `id_anggota_1`, `anggota_2`, `id_anggota_2`, `identitas_tim`) VALUES
-(2, 13, 'Dragonforce', 'Ado', '0764140001', 'Bule', '0764140002', 'file/igdc/Basprog3_G64140088.pdf');
+INSERT INTO `igdc` (`id_peserta`, `id_ketua`, `tim`, `anggota1`, `anggota2`, `judul`, `deskripsi`, `video`, `game`, `kartu_id`) VALUES
+(1, 6, 'dragonforce', 'rado', 'wawan', 'pewdiepie', 'hahaha', 'youtube.com', 'google.com', 'img/identitas/igdc/0764140001_identitas.pdf');
 
 -- --------------------------------------------------------
 
@@ -91,16 +101,17 @@ INSERT INTO `igdc` (`id_peserta`, `id_user`, `nama_tim`, `anggota_1`, `id_anggot
 --
 
 CREATE TABLE `isc` (
-  `id_peserta` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL
+  `id_peserta` int(255) NOT NULL,
+  `id_user` int(255) NOT NULL,
+  `kartu_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `isc`
 --
 
-INSERT INTO `isc` (`id_peserta`, `id_user`) VALUES
-(2, 13);
+INSERT INTO `isc` (`id_peserta`, `id_user`, `kartu_id`) VALUES
+(1, 6, 'img/identitas/isc/0764140001_identitas.pdf');
 
 -- --------------------------------------------------------
 
@@ -109,31 +120,29 @@ INSERT INTO `isc` (`id_peserta`, `id_user`) VALUES
 --
 
 CREATE TABLE `ittoday` (
-  `id_user` int(11) NOT NULL,
-  `nama_lengkap` varchar(25) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL,
-  `no_hp` varchar(13) DEFAULT NULL,
-  `alamat` varchar(150) DEFAULT NULL,
-  `no_identitas` varchar(15) DEFAULT NULL,
-  `institusi` varchar(25) DEFAULT NULL,
-  `tahun_masuk` int(11) DEFAULT NULL
+  `id_user` int(255) NOT NULL,
+  `nama_lengkap` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `no_hp` varchar(255) DEFAULT NULL,
+  `alamat` varchar(255) DEFAULT NULL,
+  `no_identitas` varchar(255) DEFAULT NULL,
+  `institusi` varchar(255) DEFAULT NULL,
+  `tahun_masuk` int(255) DEFAULT NULL,
+  `foto` varchar(255) DEFAULT 'img/user/default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `ittoday`
 --
 
-INSERT INTO `ittoday` (`id_user`, `nama_lengkap`, `email`, `password`, `no_hp`, `alamat`, `no_identitas`, `institusi`, `tahun_masuk`) VALUES
-(1, 'Fadhlal Khaliq Surado', 'fksutan.rajomudo@gmail.com', 'c3ec0f7b054e729c5a716c8125839829', '082298220348', 'Dramaga Cantik', 'G64140015', 'IPB', 2014),
-(2, 'Kedua', 'kedua@gmail.com', '8dada53087d0e313e91e5945a737ff65', '081321421093', 'Depok', 'F5410231', 'IPB', 2011),
-(3, 'Ravena', 'ravena@ravena.com', 'b4a480785c8d5ceb41a83c688ef803f3', '21903920', 'Kuningan', 'G64140041', 'IPB', 2014),
-(4, 'Feby Tri Saputra', 'febytri.saputra@gmail.com', '39907b3c541e066b8fda044731049cce', '08999627017', 'Semplak', 'G64140047', 'IPB', 2016),
-(5, 'Ampash', 'ampash@gmail.com', '3e695eb9c9e8120a7842fae23512a609', '082391231230', 'Ampash dot com', 'V51230123', 'UGM', 2012),
-(6, 'Ampash 2', 'ampash2@gmail.com', 'fd4bdf6f461394153aa7c8c0fb52e68d', '109230120312', 'Ampash dot com 2', 'V512301123', 'YUI', 2011),
-(11, 'Wawan Setyadi', 'wawan.setyadi@gmail.com', 'f2e7a38f5dd3d4befb660f9dc916cba4', '808213912391', 'Tajur', 'G64140088', 'IPB', 2014),
-(12, 'Rizqi alif', 'alifahasni.rizqi@gmail.com', '32c306b6079c0c5161e08b10d5e32eeb', '082220922296', 'bara 4', 'g64140006', 'IPB', 2014),
-(13, 'Ado Bule', 'ado.bule@gmail.com', '043077e2abaec8b0b1999e04cdfbceea', '081666999666', 'NCC', '0764140001', 'IPB', 2014);
+INSERT INTO `ittoday` (`id_user`, `nama_lengkap`, `email`, `password`, `no_hp`, `alamat`, `no_identitas`, `institusi`, `tahun_masuk`, `foto`) VALUES
+(1, 'Fadhlal Khaliq Surado', 'fksutan.rajomudo@gmail.com', 'c3ec0f7b054e729c5a716c8125839829', '082298220348', 'Dramaga Cantik', 'G64140015', 'IPB', 2014, 'img/user/default.png 	'),
+(2, 'Ravena', 'ravena@ravena.com', 'b4a480785c8d5ceb41a83c688ef803f3', '21903920', 'Kuningan', 'G64140041', 'IPB', 2014, 'img/user/default.png 	'),
+(3, 'Feby Tri Saputra', 'febytri.saputra@gmail.com', '39907b3c541e066b8fda044731049cce', '08999627017', 'Semplak', 'G64140047', 'IPB', 2016, 'img/user/default.png 	'),
+(4, 'Wawan Setyadi', 'wawan.setyadi@gmail.com', 'f2e7a38f5dd3d4befb660f9dc916cba4', '808213912391', 'Tajur', 'G64140088', 'IPB', 2014, 'img/user/default.png 	'),
+(5, 'Rizqi alif', 'alifahasni.rizqi@gmail.com', '32c306b6079c0c5161e08b10d5e32eeb', '082220922296', 'bara 4', 'g64140006', 'IPB', 2014, 'img/user/default.png 	'),
+(6, 'Ado Bule German', 'ado.bule@gmail.com', '043077e2abaec8b0b1999e04cdfbceea', '081666999690', 'NCC', '0764140001', 'IPB', 2014, 'img/user/0764140001.jpg');
 
 -- --------------------------------------------------------
 
@@ -142,8 +151,8 @@ INSERT INTO `ittoday` (`id_user`, `nama_lengkap`, `email`, `password`, `no_hp`, 
 --
 
 CREATE TABLE `seminar` (
-  `id_peserta` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL
+  `id_peserta` int(255) NOT NULL,
+  `id_user` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -151,32 +160,51 @@ CREATE TABLE `seminar` (
 --
 
 INSERT INTO `seminar` (`id_peserta`, `id_user`) VALUES
-(2, 13);
+(3, 6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `voucher`
+--
+
+CREATE TABLE `voucher` (
+  `kode_voucher` int(11) NOT NULL,
+  `activate` int(11) NOT NULL,
+  `id_user` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `voucher`
+--
+
+INSERT INTO `voucher` (`kode_voucher`, `activate`, `id_user`) VALUES
+(565656, 1, NULL);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `agricode`
---
-ALTER TABLE `agricode`
-  ADD PRIMARY KEY (`id_peserta`),
-  ADD KEY `id_user_FK` (`id_user`);
-
---
 -- Indexes for table `agrihack`
 --
 ALTER TABLE `agrihack`
   ADD PRIMARY KEY (`id_peserta`),
-  ADD KEY `id_user_FK` (`id_user`);
+  ADD KEY `id_user_FK` (`id_ketua`);
+
+--
+-- Indexes for table `digishare`
+--
+ALTER TABLE `digishare`
+  ADD PRIMARY KEY (`id_peserta`),
+  ADD KEY `id_user_FK` (`id_ketua`);
 
 --
 -- Indexes for table `igdc`
 --
 ALTER TABLE `igdc`
   ADD PRIMARY KEY (`id_peserta`),
-  ADD KEY `id_user_FK` (`id_user`);
+  ADD KEY `id_user_FK` (`id_ketua`);
 
 --
 -- Indexes for table `isc`
@@ -189,8 +217,7 @@ ALTER TABLE `isc`
 -- Indexes for table `ittoday`
 --
 ALTER TABLE `ittoday`
-  ADD PRIMARY KEY (`id_user`),
-  ADD UNIQUE KEY `no_identitas_unique` (`no_identitas`);
+  ADD PRIMARY KEY (`id_user`);
 
 --
 -- Indexes for table `seminar`
@@ -200,72 +227,85 @@ ALTER TABLE `seminar`
   ADD KEY `id_user_FK` (`id_user`);
 
 --
+-- Indexes for table `voucher`
+--
+ALTER TABLE `voucher`
+  ADD PRIMARY KEY (`kode_voucher`),
+  ADD KEY `id_user` (`id_user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `agricode`
---
-ALTER TABLE `agricode`
-  MODIFY `id_peserta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
 -- AUTO_INCREMENT for table `agrihack`
 --
 ALTER TABLE `agrihack`
-  MODIFY `id_peserta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_peserta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `digishare`
+--
+ALTER TABLE `digishare`
+  MODIFY `id_peserta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `igdc`
 --
 ALTER TABLE `igdc`
-  MODIFY `id_peserta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_peserta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `isc`
 --
 ALTER TABLE `isc`
-  MODIFY `id_peserta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_peserta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `ittoday`
 --
 ALTER TABLE `ittoday`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_user` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `seminar`
 --
 ALTER TABLE `seminar`
-  MODIFY `id_peserta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_peserta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `agricode`
---
-ALTER TABLE `agricode`
-  ADD CONSTRAINT `id_user_ac_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`);
-
---
 -- Constraints for table `agrihack`
 --
 ALTER TABLE `agrihack`
-  ADD CONSTRAINT `id_user_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`);
+  ADD CONSTRAINT `id_user_FK` FOREIGN KEY (`id_ketua`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `digishare`
+--
+ALTER TABLE `digishare`
+  ADD CONSTRAINT `id_user_ds_FK` FOREIGN KEY (`id_ketua`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `igdc`
 --
 ALTER TABLE `igdc`
-  ADD CONSTRAINT `id_user_igdc_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`);
+  ADD CONSTRAINT `id_user_igdc_FK` FOREIGN KEY (`id_ketua`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `isc`
 --
 ALTER TABLE `isc`
-  ADD CONSTRAINT `id_user_isc_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`);
+  ADD CONSTRAINT `id_user_isc_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `seminar`
 --
 ALTER TABLE `seminar`
-  ADD CONSTRAINT `id_user_sem_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`);
+  ADD CONSTRAINT `id_user_sem_FK` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `voucher`
+--
+ALTER TABLE `voucher`
+  ADD CONSTRAINT `id_user_voucher` FOREIGN KEY (`id_user`) REFERENCES `ittoday` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
