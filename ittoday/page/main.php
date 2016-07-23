@@ -59,8 +59,10 @@
 						$feed = array();
 						foreach ($rss->getElementsByTagName('item') as $node) {
 							$htmlStr = $node->getElementsByTagName('encoded')->item(0)->nodeValue;
-  							$html = new DOMDocument();        
+  							$html = new DOMDocument(); 
+  							libxml_use_internal_errors(true);       
   							$html->loadHTML($htmlStr);
+  							libxml_use_internal_errors(false);
 							//get the first image tag from the description HTML
         						$imgTag = $html->getElementsByTagName('img');
         						$img = ($imgTag->length==0)?'noimg.png':$imgTag->item(0)->getAttribute('src');
