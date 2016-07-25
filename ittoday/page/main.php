@@ -66,19 +66,36 @@
   						<div class="carousel-inner" role="listbox">
 					
 							<?php
+								function rip_tags($string) { 
+								    
+								    // ----- remove HTML TAGs ----- 
+								    $string = preg_replace ('/<[^>]*>/', ' ', $string); 
+								    
+								    // ----- remove control characters ----- 
+								    $string = str_replace("\r", '', $string);    // --- replace with empty space
+								    $string = str_replace("\n", ' ', $string);   // --- replace with space
+								    $string = str_replace("\t", ' ', $string);   // --- replace with space
+								    
+								    // ----- remove multiple spaces ----- 
+								    $string = trim(preg_replace('/ {2,}/', ' ', $string));
+								    
+								    return $string; 
+
+								}
+
 								$rss = new DOMDocument();
 								$rss->load('http://blog.ittoday.web.id/feed/');
 						
 								$feed = array();
 								foreach ($rss->getElementsByTagName('item') as $node) {
-									$htmlStr = $node->getElementsByTagName('encoded')->item(0)->nodeValue;
+									$htmlStr = $node->getElementsByTagName('description')->item(0)->nodeValue;
   									$html = new DOMDocument(); 
   									libxml_use_internal_errors(true);       
   									$html->loadHTML($htmlStr);
   									libxml_use_internal_errors(false);
 									//get the first image tag from the description HTML
-        								$imgTag = $html->getElementsByTagName('img');
-        								$img = ($imgTag->length==0)?'noimg.png':$imgTag->item(0)->getAttribute('src');
+        							$imgTag = $html->getElementsByTagName('img');
+        							$img = ($imgTag->length==0)?'noimg.png':$imgTag->item(0)->getAttribute('src');
 									$item = array ( 
 										'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
 										'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
@@ -90,29 +107,15 @@
 								}
 								
 								//Menampilkan RSS FEED (maksimal 4)
-								$title = str_replace(' & ', ' &amp; ', $feed[0]['title']);
-								$link = $feed[0]['link'];
-								$description = substr($feed[0]['desc'], 0, 150)." [...]";
-								$image = $feed[0]['image'];
-								$date = date('l F d, Y', strtotime($feed[0]['date']));
-								echo '<div class="item active">';
-									echo '<img src="img/bg_section1.jpg" alt="Chania">';
-									echo '<div class="carousel-caption">';
-										echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
-										echo '<small><em>Posted on '.$date.'</em></small></p>';
-										echo '<p>'.$description.'</p>';
-										echo '<p>'.$image.'</p>';
-									echo '</div>';
-								echo '</div>';
-
 								$limit = 4;
-								for($x=1;$x<$limit;$x++) {
+								for($x=0;$x<$limit;$x++) {
 									$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
 									$link = $feed[$x]['link'];
-									$description = substr($feed[$x]['desc'], 0, 150)." [...]";
+									$description = substr(rip_tags($feed[$x]['desc']), 0, 150)." [...]";
 									$image = $feed[$x]['image'];
 									$date = date('l F d, Y', strtotime($feed[$x]['date']));
-									echo '<div class="item">';
+									if($x==0) echo '<div class="item active">';
+									else echo '<div class="item">';
 										echo '<img src="img/bg_section1.jpg" alt="Chania">';
 										echo '<div class="carousel-caption">';
 											echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
