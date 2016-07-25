@@ -118,9 +118,10 @@
 									else echo '<div class="item">';
 										echo '<img src="'.$image.'" alt="'.$title.'">';
 										echo '<div class="carousel-caption">';
-											echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
-											echo '<small><em>Posted on '.$date.'</em></small></p>';
-											echo '<p>'.$description.'</p>';
+											echo '<h3><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong></h3>';
+											echo '<p><small><em>Posted on '.$date.'</em></small></p>';
+											echo '<p><small>'.$description.'</small></p>';
+											echo '<a href="'.$link.'" title="'.$title.'"><button type="button" class="btn btn-ittoday btn-danger">READ MORE</button></a>';
 										echo '</div>';
 									echo '</div>';
 								}
