@@ -6,9 +6,9 @@
 		<!-- Navigation -->
 		<?php if(!isset($_GET['page'])) { ?>
 		<nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse" role="navigation">
-		<? }else if(isset($_GET['page'])){  ?>
+		<?php }else if(isset($_GET['page'])){  ?>
 		<nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse" role="navigation" style="border-radius:0">
-		<? } ?>
+		<?php } ?>
 
 			<div class="container-fluid">
 				<!-- Logo & Toggle Menu -->

@@ -44,7 +44,7 @@
 				<a href="#igdc-main" class="page-scroll"><i class="fa fa-angle-double-down fa-4x" ></i></a>
 			</div>    
 		</section>
-		
+
 		<!-- NEWS Section -->
 		<section id="news-main" class="news-section">
 			<div class="container">
@@ -52,49 +52,91 @@
 					<div class="col-lg-12" style="padding-bottom:20px">
 						<h1>Berita Terbaru</h1>
 					</div>
-					<?php
-						$rss = new DOMDocument();
-						$rss->load('http://blog.ittoday.web.id/feed/');
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  						<!-- Indicators -->
+  						<ol class="carousel-indicators">
+    						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    						<li data-target="#myCarousel" data-slide-to="1"></li>
+    						<li data-target="#myCarousel" data-slide-to="2"></li>
+    						<li data-target="#myCarousel" data-slide-to="3"></li>
+  						</ol>
+
+  						<!-- Wrapper for slides -->
+  						<div class="carousel-inner" role="listbox">
+					
+							<?php
+								$rss = new DOMDocument();
+								$rss->load('http://blog.ittoday.web.id/feed/');
 						
-						$feed = array();
-						foreach ($rss->getElementsByTagName('item') as $node) {
-							$htmlStr = $node->getElementsByTagName('encoded')->item(0)->nodeValue;
-  							$html = new DOMDocument(); 
-  							libxml_use_internal_errors(true);       
-  							$html->loadHTML($htmlStr);
-  							libxml_use_internal_errors(false);
-							//get the first image tag from the description HTML
-        						$imgTag = $html->getElementsByTagName('img');
-        						$img = ($imgTag->length==0)?'noimg.png':$imgTag->item(0)->getAttribute('src');
-							$item = array ( 
-								'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
-								'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
-								'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
-								'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
-								'image' => $img,
-								);
-							array_push($feed, $item);
-						}
-						
-						//Menampilkan RSS FEED (maksimal 4)
-						
-						$limit = 4;
-						for($x=0;$x<$limit;$x++) {
-							if(($x)%2 == 0) echo "<div class=\"col-lg-6\">";
-							$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
-							$link = $feed[$x]['link'];
-							$description = substr($feed[$x]['desc'], 0, 150)." [...]";
-							$image = $feed[$x]['image'];
-							$date = date('l F d, Y', strtotime($feed[$x]['date']));
-							echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
-							echo '<small><em>Posted on '.$date.'</em></small></p>';
-							echo '<p>'.$description.'</p><br/>';
-							if(($x+1)%2 == 0) echo "</div>";
-						}
-					?>
+								$feed = array();
+								foreach ($rss->getElementsByTagName('item') as $node) {
+									$htmlStr = $node->getElementsByTagName('encoded')->item(0)->nodeValue;
+  									$html = new DOMDocument(); 
+  									libxml_use_internal_errors(true);       
+  									$html->loadHTML($htmlStr);
+  									libxml_use_internal_errors(false);
+									//get the first image tag from the description HTML
+        								$imgTag = $html->getElementsByTagName('img');
+        								$img = ($imgTag->length==0)?'noimg.png':$imgTag->item(0)->getAttribute('src');
+									$item = array ( 
+										'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+										'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+										'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+										'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+										'image' => $img,
+									);
+									array_push($feed, $item);
+								}
+								
+								//Menampilkan RSS FEED (maksimal 4)
+								$title = str_replace(' & ', ' &amp; ', $feed[0]['title']);
+								$link = $feed[0]['link'];
+								$description = substr($feed[0]['desc'], 0, 150)." [...]";
+								$image = $feed[0]['image'];
+								$date = date('l F d, Y', strtotime($feed[0]['date']));
+								echo '<div class="item active">';
+									echo '<img src="img/bg_section1.jpg" alt="Chania">';
+									echo '<div class="carousel-caption">';
+										echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
+										echo '<small><em>Posted on '.$date.'</em></small></p>';
+										echo '<p>'.$description.'</p>';
+										echo '<p>'.$image.'</p>';
+									echo '</div>';
+								echo '</div>';
+
+								$limit = 4;
+								for($x=1;$x<$limit;$x++) {
+									$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+									$link = $feed[$x]['link'];
+									$description = substr($feed[$x]['desc'], 0, 150)." [...]";
+									$image = $feed[$x]['image'];
+									$date = date('l F d, Y', strtotime($feed[$x]['date']));
+									echo '<div class="item">';
+										echo '<img src="img/bg_section1.jpg" alt="Chania">';
+										echo '<div class="carousel-caption">';
+											echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
+											echo '<small><em>Posted on '.$date.'</em></small></p>';
+											echo '<p>'.$description.'</p>';
+											echo '<p>'.$image.'</p>';
+										echo '</div>';
+									echo '</div>';
+								}
+							?>
+
+							<!-- Left and right controls -->
+  							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    							<span class="sr-only">Previous</span>
+  							</a>
+  							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  	 							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    							<span class="sr-only">Next</span>
+  							</a>
+  						</div>
+					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<!-- IGDC Section -->

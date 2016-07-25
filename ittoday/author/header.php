@@ -40,9 +40,6 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		
-		<!-- Bootstrap Carousel JS -->
-		<script src="js/bootstrap-carousel.js"></script>
-		
 		<!-- Custom CSS -->
 		<link href="css/scrolling-nav.css" rel="stylesheet">
 		<link href="css/animate.min.css" rel="stylesheet">
