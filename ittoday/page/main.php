@@ -116,12 +116,11 @@
 									$date = date('l F d, Y', strtotime($feed[$x]['date']));
 									if($x==0) echo '<div class="item active">';
 									else echo '<div class="item">';
-										echo '<img src="img/bg_section1.jpg" alt="Chania">';
+										echo '<img src="'.$image.'" alt="'.$title.'">';
 										echo '<div class="carousel-caption">';
 											echo '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
 											echo '<small><em>Posted on '.$date.'</em></small></p>';
 											echo '<p>'.$description.'</p>';
-											echo '<p>'.$image.'</p>';
 										echo '</div>';
 									echo '</div>';
 								}
