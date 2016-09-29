@@ -19,6 +19,12 @@
 			if ($db_password == md5($password)){
 				session_start();
 				$_SESSION['ittoday_user'] = $email;
+				$_SESSION['last_activity'] = time();
+				if($_POST['remember']){	
+					$_SESSION['expire_time'] = 30*60*60; //session will be expired after 30 days of inactivity
+				}else{
+					$_SESSION['expire_time'] = 30*60; //session will be expired after 30 minutes of inactivity
+				}
 				echo '<script>window.location.href="./"</script>';
 			}
 			else

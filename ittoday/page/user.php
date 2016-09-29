@@ -4,11 +4,12 @@
 	}
 
 	include "author/usermod.php";
+	include "author/batasacara.php";
 
 ?>  
 
 
-		<section id="intro" class="intro-section page-section">
+		<section id="intro" class="page-section">
             <div class="container user-page">
 
                 <?php 
@@ -73,26 +74,7 @@
 						<tr><td>Alamat</td><td><?php echo $info['alamat'] ?></td></tr>
 						<tr><td>No. HP</td><td><?php echo $info['no_hp'] ?></td></tr>
 					</table>
-					<?php 
-						$id = $info['id_user'];
-						$cekVoucher = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM voucher WHERE id_user = $id LIMIT 1"));
 
-						if(!$cekVoucher){
-					?>
-					<!-- <form class="form-inline voucher" id="voucher" action="" method="post">
-						<input type="hidden" name="verifvoucher" value="1"/>
-						<div class="form-group">
-    						<label for="cdvoucher">Kode Voucher : </label>
-   			 				<input type="text" class="form-control" id="cdvoucher" name="cdvoucher" placeholder="paste your code here">
-  						</div>
-						<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
-						<div class="clearfix"></div>
-					</form> -->
-					<?php } ?>
-					<!-- <h4 class="payment">
-                		Status Pembayaran 
-                		<i class="fa fa-check"></i>
-                	</h4> -->
                 </div>
                 <div class="col-md-5 ">
 					<h2>PILIHAN ACARA</h2>
@@ -102,19 +84,19 @@
 						</label>
 					<?php } ?>
 					<h5>Lengkapi formulir pada acara yang ingin anda ikuti :</h5>
-<a href="file/HANDBOOK_IT_TODAY_2016_V2.1.pdf" class="btn btn-danger" target="_blank"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/24/new-icon.png"> Buku Panduan Perlombaan (v2.1) <i class="fa fa-external-link-square"></i></a>
+<a href="file/HANDBOOK_IT_TODAY_2016_V2.1.pdf" class="btn btn-danger" target="_blank"><!-- <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/24/new-icon.png">--> Buku Panduan Perlombaan (v2.1) <i class="fa fa-external-link-square"></i></a>
 <br>
 						<label for="isi_dulu" hidden>
-							<b>Hint</b>: Untuk IGDC, Digital I-Share, dan Agrihack jika individu (1 orang), cukup berikan tanda "-" pada field nama anggota 1 atau anggota 2.
+							<b>Hint</b>: Untuk IGDC atau Agrihack jika individu (1 orang), cukup berikan tanda "-" pada field nama anggota 1 atau anggota 2.
 						</label>
 					<script>
 						$(document).ready(function(){
-						<?php if(mysqli_num_rows($cekigdc)==0){ ?>
+							<?php if(mysqli_num_rows($cekigdc)==0){ ?>
     						$("#igdcbutton").click(function(){
         						$("#igdcdetail").slideToggle("fast");
     						});
     						<?php }else{ ?>
-    							$("#igdcdetail").slideToggle("fast");
+    						$("#igdcdetail").slideToggle("fast");
     						$("#igdcbutton").click(function(){
         						$("#igdcdetail").slideToggle("fast");
     						});
@@ -124,7 +106,7 @@
         						$("#iscdetail").slideToggle("fast");
     						});
     						<?php }else{ ?>
-    							$("#iscdetail").slideToggle("fast");
+    						$("#iscdetail").slideToggle("fast");
     						$("#iscbutton").click(function(){
         						$("#iscdetail").slideToggle("fast");
     						});
@@ -134,7 +116,7 @@
         						$("#ahdetail").slideToggle("fast");
     						});
     						<?php }else{ ?>
-    							$("#ahdetail").slideToggle("fast");
+    						$("#ahdetail").slideToggle("fast");
     						$("#ahbutton").click(function(){
         						$("#ahdetail").slideToggle("fast");
     						});
@@ -144,34 +126,35 @@
         						$("#seminardetail").slideToggle("fast");
     						});
     						<?php }else{ ?>
-    							$("#seminardetail").slideToggle("fast");
+    						$("#seminardetail").slideToggle("fast");
     						$("#seminarbutton").click(function(){
         						$("#seminardetail").slideToggle("fast");
     						});
     						<?php } ?>
 						});
 					</script>
-					<div class="alert alert-warning" style="margin-top:5px;padding-top:2px;padding-bottom:2px;"><i class="fa fa-info-circle fa-2x" style="vertical-align:middle;float:left;margin-right:5px;"></i> <u>Syarat & Ketentuan dan Teknis Perlombaan</u>, silakan merujuk ke Buku Panduan yang tersedia di atas.</div>
+					<div class="alert alert-warning" style="margin-top:5px;padding-top:2px;padding-bottom:2px;"><i class="fa fa-info-circle fa-2x" style="vertical-align:middle;float:left;margin-right:5px;"></i> <u>Syarat &amp; Ketentuan dan Teknis Perlombaan</u>, silakan merujuk ke Buku Panduan yang tersedia di atas.</div>
 					<div id="igdcbutton" class="eventbutton">
 						<h5>IPB Game Development Competition <?php if(mysqli_num_rows($cekigdc)!=0){ echo " (Terdaftar)"; }?></h5>
 					</div>
 					<div id="igdcdetail" class="eventdetail" hidden>
 					<?php
-						if(mysqli_num_rows($cekigdc) && (strtotime(date("Y-m-d")) < strtotime("2016-08-28"))){
+						if(mysqli_num_rows($cekigdc) && (strtotime(date("Y-m-d")) < strtotime(batasAcara("igdc",2)))){
 							$in = mysqli_fetch_assoc(mysqli_query($conn, "SELECT video, game FROM igdc WHERE id_ketua = ".$info['id_user'].""));
 							$vid = "";
 							$ge = "";
 							$tombol = "Submit";
-							if(isset($in['video'])){
+							if($in['video']!=""){
 								$vid = $in['video'];
 								$tombol = "Ubah";
 							}
-							if(isset($in['game'])){
+							if($in['game']!=""){
 								$ge = $in['game'];
 								$tombol = "Ubah";
 							}
 						?>
-						<div class="alert alert-info"><i class="fa fa-info-circle"></i> Batas Pengumpulan: 27 Agustus 2016 pukul 23:59 WIB (Waktu Server)</div>
+						<div class="alert alert-info"><i class="fa fa-info-circle"></i> Batas Pengumpulan: 28 Agustus 2016 pukul 23:59 WIB</div>
+						<a href="#" data-toggle="modal" data-target="#editIGDC" class="btn btn-danger">Ubah Informasi Game</a><hr/>
 						<form method="post">
 							<input type="hidden" name="isigame2" value="1"/>
 							<div class="form-group">
@@ -185,9 +168,21 @@
 							<button type="submit" class="btn btn-danger" value="Submit"><?php echo $tombol ?></button>
 						</form>
 						<hr/>
-					<?php }else{ echo "<p class=\"status\"><div class=\"alert alert-danger\"><i class=\"fa fa-clock-o\"></i> <i>Babak Penyisihan</i></div>Game yang Anda submit akan dinilai oleh juri. Pengumuman finalis akan diberitahukan pada 31 Agustus 2016. </p><hr/>"; } ?>
+					<?php }else if(mysqli_num_rows($cekigdc) && (strtotime(date("Y-m-d")) >= strtotime(batasAcara("igdc",2))) && (strtotime(date("Y-m-d")) < strtotime(batasAcara("igdc",3)))){ echo "<p class=\"status\"><div class=\"alert alert-danger\"><i class=\"fa fa-clock-o\"></i> <i>Babak Penyisihan</i></div>Game yang sudah Anda submit memasuki tahap penilaian. Pengumuman finalis akan diberitahukan pada 1 September 2016. </p><hr/>"; 
+						}else if(mysqli_num_rows($cekigdc) && (strtotime(date("Y-m-d")) >= strtotime(batasAcara("igdc",3)))){
+							$lolos = array(1,86,44,164,222,41,154,217,92,53,282);
+
+							if(in_array($info['id_user'],$lolos)){
+								echo "<p class=\"status\"><center><i class=\"fa fa-smile-o fa-4x\"></i></center><br/> <b>Selamat! Tim kamu berhasil lolos sebagai finalis IGDC.</b><br/> Selanjutnya tim kamu dapat hadir di Auditorium FMIPA IPB Dramaga, Bogor pada hari Sabtu, 10 September 2016. Kami tunggu kedatangan kalian!<br/><br/>Informasi: 082310455845 (Miqdad) | @ittoday_ipb (LINE, Instagram, Twitter)</p><hr/>";
+							}else{
+								echo "<p class=\"status\"><center><i class=\"fa fa-frown-o fa-4x\"></i></center><br/> <b>Mohon maaf, tim kamu belum berhasil lolos sebagai finalis IGDC.</b> Namun jangan menyerah, terus berlatih dan berkarya!<br/> Kami selaku panitia IT Today 2016 mengucapkan terima kasih banyak atas partisipasinya.</p><hr/>";
+							}
+						}
+
+					 ?>
 						<span class="eventBiaya">Biaya Pendaftaran: Rp. 50.000,00</span>
 					<?php if(mysqli_num_rows($cekigdc)==0){ ?>
+						<?php if(strtotime(date("Y-m-d")) < strtotime(batasAcara("igdc",1))) { ?>
 						<form id="igdcform" action="" method="post" enctype="multipart/form-data">
 							<span>(*) Beri input "-" (strip) apabila Anda mendaftar sebagai <u>individu atau hanya terdiri dari 2 orang.</u></span><hr>
 							<input type="hidden" name="isigame" value="1"/>
@@ -222,9 +217,12 @@
   							</div>
   							<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
 						</form>
+						<?php }else{ ?>
+							<div class="alert alert-danger">Periode Pendaftaran Telah Berakhir.</div>
+						<?php } ?>
 					<?php }else{ ?>
 						<p class="status">Status Pembayaran: <?php $status = mysqli_fetch_assoc($cekigdc); $status['status_bayar_igdc'] ? printf('<i class="fa fa-check"></i> Pembayaran Terkonfirmasi') : printf('<i class="fa fa-times"></i> Belum Bayar'); ?></p>
-						<p class="status">	<?php $status['status_bayar_igdc'] ? printf("") : printf('Lakukan pembayaran ke rekening: <div style="font-size:22px;">011-401-016-914-509 (BRI)</div> (a.n Ni Kadek Meri Sudaryanti) sesuai dengan jumlah yang harus dibayarkan.<br/><br/> Konfirmasi pembayaran melalui email ke merisudaryanti18@gmail.com atau melalui WhatsApp (082236292069) atau LINE (@meri_sudaryanti). <br/><br/>Format Pengiriman:<br/> NAMAACARA_ATAS NAMA (contoh: IGDC_Fulan bin Fulan) dengan menyertakan bukti pembayaran. '); ?>
+						<p class="status">	<?php $status['status_bayar_igdc'] ? printf("") : printf('Lakukan pembayaran ke rekening: <div style="font-size:22px;">059-501-005-045-537 (BRI)</div> (a.n Ni Kadek Meri Sudaryanti) sesuai dengan jumlah yang harus dibayarkan.<br/><br/> Konfirmasi pembayaran melalui email ke merisudaryanti18@gmail.com atau melalui WhatsApp (082236292069) atau LINE (@meri_sudaryanti). <br/><br/>Format Pengiriman:<br/> NAMAACARA_ATAS NAMA (contoh: IGDC_Fulan bin Fulan) dengan menyertakan bukti pembayaran. '); ?>
 						</p>
 					<?php } ?>
 					</div>
@@ -234,14 +232,18 @@
 					<div id="iscdetail" class="eventdetail" hidden>
 						<span class="eventBiaya">Biaya Pendaftaran: Rp. 50.000,00</span>
 						<?php if(mysqli_num_rows($cekisc)==0){ ?>
-						<form id="iscform" action="" method="post" enctype="multipart/form-data">
-							<input type="hidden" name="isisearching" value="1"/>
-							<div class="form-group">
-    							<label for="iscfile">Fotokopi Kartu Identitas (Format: PNG, JPG, PDF Max 5 MB)</label>
-    							<input type="file" id="iscfile" name="iscfile" accept="image/png, image/jpg, application/pdf" required>
-  							</div>
-  							<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
-						</form>
+							<?php if(strtotime(date("Y-m-d")) < strtotime(batasAcara("isc",1))) { ?>
+							<form id="iscform" action="" method="post" enctype="multipart/form-data">
+								<input type="hidden" name="isisearching" value="1"/>
+								<div class="form-group">
+	    							<label for="iscfile">Fotokopi Kartu Identitas (Format: PNG, JPG, PDF Max 5 MB)</label>
+	    							<input type="file" id="iscfile" name="iscfile" accept="image/png, image/jpg, application/pdf" required>
+	  							</div>
+	  							<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+							</form>
+							<?php }else{ ?>
+								<div class="alert alert-danger">Periode Pendaftaran Telah Berakhir.</div>
+							<?php } ?>
 						<?php }else{ ?>
 							<p class="status">Status Pembayaran: <?php $status = mysqli_fetch_assoc($cekisc); $status['status_bayar_isc'] ? printf('<i class="fa fa-check"></i> Pembayaran Terkonfirmasi') : printf('<i class="fa fa-times"></i> Belum Bayar'); ?></p>
 							<p class="status">	<?php $status['status_bayar_isc'] ? printf("") : printf('Lakukan pembayaran ke rekening: <div style="font-size:22px;">0-393-500-323 (BNI)</div> (a.n Ihda Aini) sesuai dengan jumlah yang harus dibayarkan.<br/><br/> Konfirmasi pembayaran melalui email ke ainiihda@gmail.com atau melalui WhatsApp (085712444713) atau LINE (@ainiihda). <br/><br/>Format Pengiriman:<br/> NAMAACARA_ATAS NAMA (contoh: ISC_Fulan bin Fulan) dengan menyertakan bukti pembayaran.'); ?>
@@ -255,37 +257,54 @@
 					<div id="ahdetail" class="eventdetail" hidden>
 						<div class="alert alert-warning"><i class="fa fa-warning"></i> Dikhususkan untuk SMA/Sederajat dan Diploma</div>
 						<span class="eventBiaya">Biaya Pendaftaran: Rp. 50.000,00</span>
-						<?php if(mysqli_num_rows($cekah)==0){ ?>
-						<form id="ahform" action="" method="post" enctype="multipart/form-data">
-							<span>(*) Beri input "-" (strip) apabila Anda mendaftar sebagai <u>individu atau hanya terdiri dari 2 orang.</u></span><hr>
-							<input type="hidden" name="isiagrihack" value="1"/>
-							<div class="form-group">
-								<label for="ahteam">Nama Tim</label><br/>
-								<input type="text" class="form-control" name="ahteam" id="ahteam" required/>
-							</div>
-							<div class="form-group">
-								<label for="ahmember0">Nama Ketua</label><br/>
-								<input type="text" class="form-control" value="<?php echo $info['nama_lengkap'] ?>" disabled/>
-							</div>
-							<div class="form-group">
-								<label for="ahmember1">Nama Anggota 1 (*)</label><br/>
-								<input type="text" class="form-control" name="ahmember1" id="ahmember1" required/>
-							</div>
-							<div class="form-group">
-								<label for="ahmember2">Nama Anggota 2 (*)</label><br/>
-								<input type="text" class="form-control" name="ahmember2" id="ahmember2" required/>
-							</div>
-							<div class="form-group">
-    							<label for="ahfile">Fotokopi Kartu Identitas Tim (Format: PDF Max 5 MB)</label>
-    							<input type="file" id="ahfile" name="ahfile" accept="application/pdf" required>
-  							</div>
-  							<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
-						</form>
-						<?php }else{ ?>
-							<p class="status">Status Pembayaran: <?php $status = mysqli_fetch_assoc($cekah); $status['status_bayar_ah'] ? printf('<i class="fa fa-check"></i> Pembayaran Terkonfirmasi') : printf('<i class="fa fa-times"></i> Belum Bayar'); ?></p>
+						<?php 
+						$status = mysqli_fetch_assoc($cekah); $invalid=$status['invalid'];
+						if(mysqli_num_rows($cekah)==0){ ?>
+							<?php if(strtotime(date("Y-m-d")) < strtotime(batasAcara("agrihack",1))) { ?>
+							<form id="ahform" action="" method="post" enctype="multipart/form-data">
+								<span>(*) Beri input "-" (strip) apabila Anda mendaftar sebagai <u>individu atau hanya terdiri dari 2 orang.</u></span><hr>
+								<input type="hidden" name="isiagrihack" value="1"/>
+								<div class="form-group">
+									<label for="ahteam">Nama Tim</label><br/>
+									<input type="text" class="form-control" name="ahteam" id="ahteam" required/>
+								</div>
+								<div class="form-group">
+									<label for="ahmember0">Nama Ketua</label><br/>
+									<input type="text" class="form-control" value="<?php echo $info['nama_lengkap'] ?>" disabled/>
+								</div>
+								<div class="form-group">
+									<label for="ahmember1">Nama Anggota 1 (*)</label><br/>
+									<input type="text" class="form-control" name="ahmember1" id="ahmember1" required/>
+								</div>
+								<div class="form-group">
+									<label for="ahmember2">Nama Anggota 2 (*)</label><br/>
+									<input type="text" class="form-control" name="ahmember2" id="ahmember2" required/>
+								</div>
+								<div class="form-group">
+	    							<label for="ahfile">Fotokopi Kartu Identitas Tim (Format: PDF Max 5 MB)</label>
+	    							<input type="file" id="ahfile" name="ahfile" accept="application/pdf" required>
+	  							</div>
+	  							<button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+							</form>
+							<?php }else{ ?>
+								<div class="alert alert-danger">Periode Pendaftaran Telah Berakhir.</div>
+							<?php } ?>
+						<?php }else if((mysqli_num_rows($cekah)==1) && $invalid==2){ ?>
+							<p class="status" style="border-top:1px solid;border-bottom:1px solid"><i class="fa fa-check"></i> Verifikasi Berhasil.</p>
+							<p class="status">Status Pembayaran: <?php $status['status_bayar_ah'] ? printf('<i class="fa fa-check"></i> Pembayaran Terkonfirmasi') : printf('<i class="fa fa-times"></i> Belum Bayar'); ?></p>
 							<p class="status">	<?php $status['status_bayar_ah'] ? printf("") : printf('Lakukan pembayaran ke rekening: <div style="font-size:22px;">0-342-093-815 (BNI)</div> (a.n Desi Putri Pertiwi) sesuai dengan jumlah yang harus dibayarkan.<br/><br/> Konfirmasi pembayaran melalui email ke desiputripertiwi@gmail.com atau melalui WhatsApp/LINE (087793185999). <br/><br/>Format Pengiriman:<br/> NAMAACARA_ATAS NAMA (contoh: Agrihack_Fulan bin Fulan) dengan menyertakan bukti pembayaran. '); ?>
 							</p>
-						<?php } ?>
+						<?php }else if($invalid!=2){ ?><hr/>
+							<p class="status">
+							<?php  
+							if($status['invalid'] == 1)
+								printf('<i class="fa fa-times"></i> Verifikasi Gagal: Anda Tidak Memenuhi Kriteria Pendaftar');
+							else if($status['invalid'] == 0)
+								printf('<i class="fa fa-clock-o"></i> Sedang Dilakukan Verifikasi Data'); 
+							else if($status['invalid'] == 2)
+								print('');
+							?></p></p>
+						 <?php } ?>
 					</div>
 					<div id="seminarbutton" class="eventbutton">
 						<h5>Seminar IT <?php if(mysqli_num_rows($ceksemit)!=0){ echo " (Terdaftar)"; }?></h5>
@@ -293,10 +312,14 @@
 					<div id="seminardetail" class="eventdetail" hidden>
 						<span class="eventBiaya">Biaya Pendaftaran: Rp. 40.000,00</span>
 						<?php if(mysqli_num_rows($ceksemit)==0){ ?>
-						<form id="seminarform" action="" method="post">
-							<input type="hidden" name="isiseminar" value="1"/>
-  							<button type="submit" class="btn btn-danger" value="Submit">Daftar</button>
-						</form>
+							<?php if(strtotime(date("Y-m-d")) < strtotime(batasAcara("seminar",1))) { ?>
+							<form id="seminarform" action="" method="post">
+								<input type="hidden" name="isiseminar" value="1"/>
+	  							<button type="submit" class="btn btn-danger" value="Submit">Daftar</button>
+							</form>
+							<?php }else{ ?>
+								<div class="alert alert-danger">Periode Pendaftaran Telah Berakhir.</div>
+							<?php } ?>
 						<?php }else{ ?>
 							<p class="status">Status Pembayaran: <?php $status = mysqli_fetch_assoc($ceksemit); $status['status_bayar_sem'] ? printf('<i class="fa fa-check"></i> Pembayaran Terkonfirmasi') : printf('<i class="fa fa-times"></i> Belum Bayar'); ?></p>
 							<p class="status">	<?php $status['status_bayar_sem'] ? printf("") : printf('Lakukan pembayaran ke rekening: <div style="font-size:22px;">0-393-500-550 (BNI)</div> (a.n Ainil Fitri) sesuai dengan jumlah yang harus dibayarkan.<br/><br/> Konfirmasi pembayaran melalui email ke 56afitri@gmail.com atau melalui WhatsApp (082283053254) atau LINE (@afitri56). <br/><br/>Format Pengiriman:<br/> NAMAACARA_ATAS NAMA (contoh: Seminar_Fulan bin Fulan) dengan menyertakan bukti pembayaran. '); ?>
@@ -310,7 +333,6 @@
             </div>
 		</section>
 <script type="text/javascript">
-
     function ValidateFileUpload() {
     	$('#blah').hide();
         var fuData = document.getElementById('fotobaru');
@@ -356,6 +378,51 @@
 
 </script>
 <!-- Modal -->
+<?php if(mysqli_num_rows($cekigdc) && (strtotime(date("Y-m-d")) < strtotime(batasAcara("igdc",2)))){ 
+$gamesIGDC = mysqli_fetch_assoc(mysqli_query($conn, "SELECT tim, anggota1, anggota2, judul, deskripsi FROM igdc WHERE id_ketua=".$info['id_user'].""));
+
+?>
+<div class="modal fade" id="editIGDC" tabindex="-1" role="dialog" aria-labelledby="editIGDCLabel">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+    		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h4 class="modal-title" id="myModalLabel">Ubah Informasi Game</h4>
+      		</div>
+      		<div class="modal-body">
+        		<form action="" id="fotoform" method="post" enctype="multipart/form-data">
+        			<input type="hidden" name="updateigdc" value="1"/>
+        			<div class="form-group">
+						<label for="igdctim">Nama Tim</label><br/>
+						<input type="text" class="form-control" name="igdctim" id="igdctim" value="<?php echo $gamesIGDC['tim']; ?>" required/>
+					</div>
+					<div class="form-group">
+						<label for="igdcmember">Anggota Tim</label><br/>
+						<ul>
+							<li><?php echo $info['nama_lengkap'] ?></li>
+							<li><?php echo $gamesIGDC['anggota1'] ?></li>
+							<li><?php echo $gamesIGDC['anggota2'] ?></li>
+						</ul>
+					</div>
+					<div class="form-group">
+						<label for="igdctitle">Judul Game</label><br/>
+						<input type="text" class="form-control" name="igdctitle" id="igdctitle" value="<?php echo $gamesIGDC['judul']; ?>" required/>
+					</div>
+					<div class="form-group">
+						<label for="igdcdesc">Deskripsi Singkat</label><br/>
+						<textarea id="igdcdesc" name="igdcdesc" class="form-control" required><?php echo $gamesIGDC['deskripsi']; ?></textarea>
+					</div>
+      		</div>
+      		<div class="modal-footer">
+        			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			<button type="submit" class="btn btn-danger" value="Change" id="ubahigdc">Save changes</button>
+				</form>
+      		</div>
+    	</div>
+ 	</div>
+</div>
+<?php } ?>
+
 <div class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="picModalLabel">
   	<div class="modal-dialog" role="document">
     	<div class="modal-content">
@@ -369,7 +436,7 @@
 					<div class="form-group">
     					<label for="fotobaru">Upload Foto Profil Anda</label>
     					<div class="clearfix"></div>
-    					<img src="images/noimg.jpg" style="height:40%;width:50%;" id="blah" hidden><br/>
+    					<img src="" style="height:40%;width:50%;" id="blah" hidden><br/>
     					<input type="file" id="fotobaru" name="fotobaru" accept="image/*" onchange="ValidateFileUpload()">
   					</div>
       		</div>
@@ -427,15 +494,6 @@
 </div>
 
 <?php
-	function cekExt($file_name){
-	 	$allowed =  array('gif','png' ,'jpg','jpeg','bmp','pdf');
-		$ext = pathinfo($file_name, PATHINFO_EXTENSION);
-	 	if(!in_array($ext,$allowed)) {
-			return false;
-		}else{
-			return true;
-		}
-	}
 
 	mysqli_close($conn);
 ?>

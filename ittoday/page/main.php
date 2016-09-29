@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<div class="down-arrow" id="bawah">
-				<a href="#igdc-main" class="page-scroll"><i class="fa fa-angle-double-down fa-4x" ></i></a>
+				<a href="#news-main" class="page-scroll"><i class="fa fa-angle-double-down fa-4x" ></i></a>
 			</div>    
 		</section>
 
@@ -82,6 +82,15 @@
 								    return $string; 
 
 								}
+								
+								$opts = array(
+    									'http' => array(
+      									'user_agent' => 'PHP libxml agent',
+    									)
+								);
+
+								$context = stream_context_create($opts);					
+								libxml_set_streams_context($context);
 
 								$rss = new DOMDocument();
 								$rss->load('http://blog.ittoday.web.id/feed/');
@@ -112,11 +121,12 @@
 									$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
 									$link = $feed[$x]['link'];
 									$description = substr(rip_tags($feed[$x]['desc']), 0, 150)." [...]";
-									$image = $feed[$x]['image'];
+									//$image = $feed[$x]['image'];
+									$image = preg_replace("/(http:\/\/blog.ittoday.web.id\/wp-content\/uploads\/)([0-9]+\/[0-9]+)\/([a-zA-Z0-9_-]+)-[0-9]+x[0-9]+\.(jpg|png|jpeg|bmp)/","blog/wp-content/uploads/$2/$3.$4", $feed[$x]['image']);
 									$date = date('l F d, Y', strtotime($feed[$x]['date']));
 									if($x==0) echo '<div class="item active">';
 									else echo '<div class="item">';
-										echo '<img src="'.$image.'" alt="'.$title.'">';
+										echo '<img src="'.$image.'" alt="'.$title.'" style="opacity:0.4;filter:alpha(opacity=40);">';
 										echo '<div class="carousel-caption">';
 											echo '<h3><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong></h3>';
 											echo '<p><small><em>Posted on '.$date.'</em></small></p>';
@@ -176,22 +186,6 @@
 			</div>
 		</section>
 
-		<!-- Digital I-Share Section
-		<section id="digishare-main" class="digishare-section">
-			<div class="container animated" id="digishare-start">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1>Digital I-Share</h1>
-						<div class="section-icon"><img src="img/digishare/4.png"/></div>
-						<p>
-							Digital I-Share merupakan kompetisi penciptaan ide aplikasi untuk SMA/Sederajat, diploma, dan Mahasiswa S1 di seluruh Indonesia. Peserta akan berlomba menciptakan ide kreatif tentang aplikasi yang berguna untuk mengubah masa depan dunia.
-						</p>
-						<button type="button" class="btn btn-ittoday btn-danger" onclick="window.location.href='digishare'">DETAIL</button>
-					</div>
-				</div>
-			</div>
-		</section>  -->
-
 		<!-- Agrihack Section -->
 		<section id="agrihack-main" class="agrihack-section">
 			<div class="container animated" id="agrihack-start">
@@ -230,16 +224,13 @@
 		</section>
 
 		<!-- Tanah Section -->
-		<section id="tanah-main" class="tanah-section">
+		<section id="tanah-main" class="tanah-section" style="display:none">
 			<div class="container animated" id="tanah-start">
 				<div class="row">
 					<div class="col-lg-12">
 						<img src="img/logo.png">
-						<p style="font-size:2vmax">Grow Indonesia's Future with Technology</p>
+						<p style="font-size:2vmax">Grow Indonesia&#39;s Future with Technology</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<script>
-
-		</script>

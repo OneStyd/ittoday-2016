@@ -1,7 +1,5 @@
 		<!-- Intro Section -->
-
-
-		<div class="spacer">&nbsp;</div>
+		<!-- <div class="spacer">&nbsp;</div> -->
 		<section id="intro" class="page-section">
 			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
@@ -31,7 +29,9 @@ Dengan demikian diharapkan masyarakat Indonesia bisa mengenal lebih baik teknolo
 						<h2><i class="fa fa-info-circle"></i> Informasi Pendaftaran</h2>
 						<p>	
 							<table>
-							<tr><td>Daftar Online&nbsp;</td><td>: 1 Juni - 10 September</td></tr>
+							<tr><td>Daftar Online&nbsp;</td><td>: 1 Juni - 15 September 2016</td></tr>
+							<tr><td>Acara&nbsp;</td><td>: Minggu, 18 September 2016</td></tr>
+							<tr><td>Lokasi&nbsp;</td><td>: Auditorium Andi Hakim Nasution IPB</td></tr>
 							<tr><td>Biaya&nbsp;</td><td>: Rp. 40.000,00 per Orang</td></tr>
 							</table>
 							<button type="button" onclick="window.location.href='user'" class="btn btn-danger">Daftar Sekarang</button>
@@ -42,6 +42,6 @@ Dengan demikian diharapkan masyarakat Indonesia bisa mengenal lebih baik teknolo
 						</p>
 					</div>
 				</div>
-				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
+				<!-- <img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;"> -->
 			</div>
 		</section>

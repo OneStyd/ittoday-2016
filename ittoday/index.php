@@ -6,7 +6,7 @@
 ?>
 
 <!DOCTYPE html>
-<!-- Made with love by IT Today Web's Team. Thanks to Himalkom IPB, Idcloudhost, and all of IT Today's committee  -->
+<!-- Made with love by IT Today's Web Team. Thanks to all of IT Today's committee and everyone whose support us -->
 <html lang="en">
 	<head>
 		<?php include "author/header.php"; ?>
@@ -28,7 +28,6 @@
 				}
 			}
 		?>
-		<!-- Page Section -->
 
 		<?php include "author/footer.php"; ?>
 	</body>

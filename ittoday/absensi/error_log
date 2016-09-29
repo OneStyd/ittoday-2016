@@ -1,0 +1,19 @@
+[09-Sep-2016 07:14:55 Asia/Jakarta] PHP Fatal error:  Cannot redeclare generateRandomString() (previously declared in /home/ittodayw/public_html/absensi/index.php:102) in /home/ittodayw/public_html/absensi/view.php on line 35
+[09-Sep-2016 08:02:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:10:36 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 8
+[09-Sep-2016 08:11:43 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 8
+[09-Sep-2016 08:12:47 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:12:47 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:13:29 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:13:41 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:13:46 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:14:00 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:15:11 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:15:24 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/absensi/modif.php on line 9
+[09-Sep-2016 08:18:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ittodayw/public_html/absensi/modif.php on line 16
+[09-Sep-2016 08:20:52 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects exactly 1 parameter, 0 given in /home/ittodayw/public_html/absensi/modif.php on line 12
+[09-Sep-2016 08:21:36 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects exactly 1 parameter, 0 given in /home/ittodayw/public_html/absensi/modif.php on line 12
+[09-Sep-2016 08:41:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ittodayw/public_html/absensi/modif.php on line 22
+[09-Sep-2016 08:42:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ittodayw/public_html/absensi/modif.php on line 22
+[09-Sep-2016 08:42:34 Asia/Jakarta] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/ittodayw/public_html/absensi/modif.php on line 18
+[09-Sep-2016 08:42:49 Asia/Jakarta] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/ittodayw/public_html/absensi/modif.php on line 18

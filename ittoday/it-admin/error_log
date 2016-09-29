@@ -1,0 +1,130 @@
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'ittodayw_root'@'localhost' to database 'ittoday_2016' in /home/ittodayw/public_html/it-admin/connect_adm.php on line 2
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 2
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 2
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 3
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 3
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 4
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 4
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 5
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 5
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 6
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 6
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 7
+[05-Jun-2016 23:06:39 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 7
+[05-Jun-2016 23:06:41 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'ittodayw_root'@'localhost' to database 'ittoday_2016' in /home/ittodayw/public_html/it-admin/connect_adm.php on line 2
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 127
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 130
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 133
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 136
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 139
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 146
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 186
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 205
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 252
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 283
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 10:35:57 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 127
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 130
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 133
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 136
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 139
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 146
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 186
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 205
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 252
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 283
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 13:16:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 300
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[06-Jun-2016 23:44:50 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, array given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 102
+[22-Jun-2016 09:48:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/ittodayw/public_html/it-admin/loginprocess.php on line 5
+[22-Jun-2016 09:48:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/ittodayw/public_html/it-admin/loginprocess.php on line 5
+[22-Jun-2016 09:49:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/ittodayw/public_html/it-admin/loginprocess.php on line 5
+[22-Jun-2016 09:49:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/ittodayw/public_html/it-admin/loginprocess.php on line 5
+[22-Jun-2016 09:50:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/ittodayw/public_html/it-admin/loginprocess.php on line 5
+[03-Aug-2016 17:27:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$statInv' (T_VARIABLE) in /home/ittodayw/public_html/it-admin/page/data-user.php on line 338
+[03-Aug-2016 17:27:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$statInv' (T_VARIABLE) in /home/ittodayw/public_html/it-admin/page/data-user.php on line 338
+[03-Aug-2016 17:27:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$statInv' (T_VARIABLE) in /home/ittodayw/public_html/it-admin/page/data-user.php on line 338
+[03-Aug-2016 17:38:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/ittodayw/public_html/it-admin/ubahvalid.php on line 4
+[03-Aug-2016 17:38:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/ittodayw/public_html/it-admin/ubahvalid.php on line 4
+[03-Aug-2016 17:51:53 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 3
+[03-Aug-2016 17:51:53 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/dashboard.php on line 4
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 119
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 186
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 189
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 192
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 195
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 198
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 205
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 245
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 264
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 311
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 345
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:35:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 186
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 189
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 192
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 195
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 198
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 205
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 245
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 264
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 311
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 345
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[21-Aug-2016 08:36:15 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 186
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 189
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 192
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 195
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 198
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 205
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 245
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 264
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 311
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 345
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[22-Aug-2016 19:43:38 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/page/data-user.php on line 362
+[28-Aug-2016 14:33:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:46 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:33:52 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 73
+[28-Aug-2016 14:44:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-user.php on line 236
+[28-Aug-2016 14:44:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/page/data-user.php on line 236
+[08-Sep-2016 17:09:04 Asia/Jakarta] PHP Warning:  include(page/data-login.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/index.php on line 179
+[08-Sep-2016 17:09:04 Asia/Jakarta] PHP Warning:  include(page/data-login.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/index.php on line 179
+[08-Sep-2016 17:09:04 Asia/Jakarta] PHP Warning:  include(): Failed opening 'page/data-login.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ittodayw/public_html/it-admin/index.php on line 179
+[09-Sep-2016 18:33:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 128
+[09-Sep-2016 18:33:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/ittodayw/public_html/it-admin/page/data-igdc.php on line 128

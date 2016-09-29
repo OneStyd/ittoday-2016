@@ -28,3 +28,12 @@
 [25-Jun-2016 07:04:33 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ittodayw/public_html/author/usermod.php on line 75
 [25-Jun-2016 07:04:33 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ittodayw/public_html/author/usermod.php on line 78
 [25-Jun-2016 07:04:33 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ittodayw/public_html/author/usermod.php on line 81
+[29-Jul-2016 00:40:36 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 8
+[29-Jul-2016 00:48:21 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:48:25 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:48:30 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:48:34 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:49:10 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:49:13 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:49:19 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20
+[29-Jul-2016 00:49:24 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/author/validasi.php on line 20

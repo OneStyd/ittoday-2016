@@ -1,5 +1,5 @@
 		<!-- Intro Section -->
-		<div class="spacer">&nbsp;</div>
+		<!-- <div class="spacer">&nbsp;</div> -->
 		<section id="intro" class="page-section">
 			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
@@ -25,7 +25,11 @@
 						<h2>Informasi Pendaftaran</h2>
 						<p style="infos">
 							<table>
-							<tr><td>Daftar Online&nbsp;</td><td>: 1 Juni 2016</td></tr>
+							<tr><td>Daftar Online&nbsp;</td><td>: 1 Juni - 28 Agustus 2016</td></tr>
+							<tr><td>Penyisihan Online&nbsp;</td><td>: 3-4 September 2016</td></tr>
+							<tr><td>Pengumuman Finalis 10 Besar&nbsp;</td><td>: 6 September 2016</td></tr>
+							<tr><td>Pelaksanaan Final&nbsp;</td><td>: Sabtu, 17 September 2016 (Kampus Dramaga IPB) </td></tr>
+							<tr><td>&nbsp;</tr></td>
 							<tr><td>Kriteria Pendaftar&nbsp;</td><td>: Bisa berupa tim (2-3 orang) atau individu</td></tr>
 							<tr><td>Biaya Pendaftaran&nbsp;</td><td>: Rp. 50.000,00</td></tr>
 							</table>
@@ -40,6 +44,6 @@
 						</p>
 					</div>
 				</div>
-				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
+				<!-- <img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;"> -->
 			</div>
 		</section>

@@ -1,13 +1,28 @@
 <IfModule mod_rewrite.c>
-Options +FollowSymLinks
-Options -Indexes
+	Options +FollowSymLinks
+	Options -Indexes
 
-RewriteEngine On
+	RewriteEngine On
+	
+	#redirect all request that start with www.ittoday.web.id/ to ittoday.web.id/
+	RewriteBase /
+	RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+	
+	#https mode ON
+	RewriteCond %{HTTPS} !on
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+	
+	#redirect ittoday.web.id/?page=blabla into ittoday.web.id/blabla
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([0-9a-zA-Z\-]*)$ index.php?page=$1 [QSA,L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([0-9a-zA-Z\-]*)$ index.php?page=$1 [QSA,L]
+	ErrorDocument 404 /404
+</IfModule>
 
-ErrorDocument 404 http://ittoday.web.id/404
-
+<IfModule mod_expires.c>
+    #ExpiresActive On
+    #ExpiresByType text/css "modification plus 6 hours"
+    #ExpiresByType application/javascript "modification plus 6 hours"
 </IfModule>

@@ -2,8 +2,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Website IT Today 2016">
-		<meta name="author" content="Tim Website IT Today 2016">
+		<meta name="description" content="IT Today IPB 2016. IPB Searching Competition, IPB Game Development Competition, AgriHack CTF, Seminar IT Nasional.">
+		<meta name="keywords" content="IT Today, IPB, IGDC, ISC, AgriHack, Seminar IT">
+		<meta name="author" content="Tim Website IT Today IPB 2016">
 		
 		<!-- Title -->
 		<?php if(empty($_GET['page'])) { ?>
@@ -23,6 +24,8 @@
 				$page = "Profil Saya";
 			}else if($page === "FORGOTPASS" || $page === "RESETPASS"){
 				$page = "Reset Password";
+			}else if($page === "LOGOUT"){
+				$page = "Logout";
 			}else{
 				$page = "404 Not Found";
 			}
@@ -41,9 +44,9 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		
 		<!-- Custom CSS -->
-		<link href="css/scrolling-nav.css" rel="stylesheet">
+		<link href="css/scrolling-nav.css?v=2.1.22" rel="stylesheet">
 		<link href="css/animate.min.css" rel="stylesheet">
-		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/ittoday.css?v=2.1.34" rel="stylesheet">
     
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

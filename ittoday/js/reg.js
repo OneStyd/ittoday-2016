@@ -3,12 +3,17 @@
 	  var login = $("#btn-login").val();
       var email = $("#email").val();
       var password = $("#password").val();
+      var remember = 0;
+
+      if($("#remember").is(":checked")){
+      	remember = 1;
+      }
 
       event.preventDefault();
       $.ajax({
         url: "./author/login_proc.php",
         type: "POST",
-        data: {login: login, email:email, password: password},
+        data: {login: login, email:email, password: password, remember:remember},
         success: function(data){
           if(data == 'errno200'){
             //event.preventDefault();
@@ -50,7 +55,7 @@ function validasiEmail(){
 	jQuery.ajax({
 		url: "./author/validasi.php",
 		data:{email: email},
-		async: false,  
+		//async: false,  
 		type: "POST",
 		success:function(data){
 			$("#email_error").html(data);

@@ -13,6 +13,9 @@
 
 <blockquote>Pengembangan project ini dilakukan secara bersama-sama hingga event terlaksana dengan baik. </blockquote>
 
+<blockquote>Versi 4 Final. Web lebih stabil dan <i>secure</i>. Penambahan beberapa fungsi pada halaman admin.</blockquote>
+
+<hr>
 <h3>Kebutuhan perangkat lunak:</h3>
 
 <b>SIGN UP & LOGIN</b>

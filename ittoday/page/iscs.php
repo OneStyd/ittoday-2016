@@ -1,5 +1,5 @@
 		<!-- Intro Section -->
-		<div class="spacer">&nbsp;</div>
+		<!-- <div class="spacer">&nbsp;</div> -->
 		<section id="intro" class="page-section">
 			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
@@ -28,12 +28,13 @@
 								<li>Tahapan Pendaftaran</li>
 								<ul>
 									<li>Sesi Pertama: 1 Juni - 23 Agustus 2016</li>
-									<li>Sesi Kedua: 24 Agustus - 5 September 2016 (Jika kuota masih ada)</li>
+									<li>Sesi Kedua: 24 Agustus - 5 September 2016 (telah dibuka)</li>
 								</ul>
 								<li>Pelaksanaan</li>
 								<ul>
+									<li>Waktu: Minggu, 11 September 2016</li>
 									<li>Tempat: GKA Faperta IPB</li>
-									<li>Teknis: 2 Sesi (Sesi Pertama dan Sesi Kedua)</li>
+									<li>Teknis: 2 babak (Babak Pertama dan Babak Kedua)</li>
 								</ul>
 							</ul>
 						</p>
@@ -47,6 +48,6 @@
 						</p>
 					</div>
 				</div>
-				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
+				<!-- <img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;display:none;"> -->
 			</div>
 		</section>

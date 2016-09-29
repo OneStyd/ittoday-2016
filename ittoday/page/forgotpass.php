@@ -1,5 +1,6 @@
-<section id="intro" class="intro-section page-section">
-	<div class="row-login col-md-6 col-md-offset-3">
+<section id="intro" class="intro-section">
+	<div class="container row-login">
+		<div class="col-md-6 col-md-offset-3">
 <?php
 if(isset($_SESSION['ittoday_user'])){
 	header("location:./");
@@ -78,6 +79,6 @@ _MAIL_;
 
 <?php
 }
-?>
+?>		</div>
 	</div>
 </section>

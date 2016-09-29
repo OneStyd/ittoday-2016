@@ -1,5 +1,5 @@
 		<!-- Intro Section -->
-		<div class="spacer">&nbsp;</div>
+		<!-- <div class="spacer">&nbsp;</div> -->
 		<section id="intro" class="page-section">
 			<div class="container animated" id="section-masuk">
 				<div class="row" style="text-align:justify"> 
@@ -30,13 +30,13 @@
 							<ul>
 								<li>Pendaftaran dan Mekanisme</li>
 								<ul>
-									<li>Pendaftaran: 1 Juni – 13 Agustus 2016</li>
-									<li>Batas Pengumpulan Video: 23 Agustus 2016</li>
+									<li>Pendaftaran: 1 Juni – 27 Agustus 2016</li>
+									<li>Batas Pengumpulan Video: 27 Agustus 2016</li>
 									<li>Batas Submit Appstore: 27 Agustus 2016 </li>
-									<li>Seleksi 10 Besar: 28 -  3 Agustus 2016</li>
-									<li>Pengumuman 10 Besar: 4 Agustus 2016</li>
+									<li>Seleksi 10 Besar: 28 Agustus -  3 September 2016</li>
+									<li>Pengumuman Finalis 10 Besar: 4 September 2016</li>
 								</ul>
-								<li>Pelaksanaan</li>
+								<li>Pelaksanaan Presentasi Finalis</li>
 								<ul>
 									<li>Hari, Tanggal: Sabtu, 10 September 2016</li>
 									<li>Tempat: GKA</li>
@@ -56,6 +56,7 @@
 						</p>
 					</div>
 				</div>
-				<img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;">
+				<div class="spacer">&nbsp;</div>
+				<!-- <img src="img/logo.png" style="padding-top:20px;float:right;max-width:20%;display:none;"> -->
 			</div>
 		</section>

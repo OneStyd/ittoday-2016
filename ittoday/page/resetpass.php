@@ -1,6 +1,6 @@
-<section id="intro" class="intro-section page-section">	
-       <div class="row-login col-md-6 col-md-offset-3">
-
+<section id="intro" class="intro-section">
+	<div class="container row-login">
+		<div class="col-md-6 col-md-offset-3">
 
 <?php
 	if(isset($_SESSION['ittoday_user']) || empty($_GET['verify'])){
@@ -53,5 +53,6 @@
 		}else{ ?>
 			<div class="alert alert-danger">Link sudah kadaluarsa atau memang tidak tersedia <script>window.setTimeout(function(){ window.location.href = './';}, 1500);</script></div>
 <?php	}} ?>
+		</div>
 	</div>
 </section>

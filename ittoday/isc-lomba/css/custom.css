@@ -1,0 +1,118 @@
+/*CUSTOM CSS*/
+
+body{
+  text-align: center;
+  background: #eaeaea;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  color: #fff;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 80px 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(128,12,36);
+}
+
+h3{
+  padding: 0;
+  margin: 0 auto;
+}
+
+p,ol{
+  line-height: 1.5em;
+  text-align: justify;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table{
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.navbar-time{
+  margin-top: 8px !important;
+  padding: 10px auto;
+  float:left;
+}
+
+.page-header {
+    padding-bottom: 5px;
+    margin: 10px 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.main{
+  /*padding: 5px 20px 0 20px;*/
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.centered {
+  /*display*/:flex;
+  /*position: relative;*/
+  /*top: 40%;*/
+  /*left: 50%;*/
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+   /*bring your own prefixes */
+  /*transform: translate(0%, -50%);*/
+}
+
+.paragraph{
+	padding: 20px 20px 20px 20px;
+	text-align: left;
+}
+
+.fa-1p5x{
+  font-size: 20px;
+}
+
+.btn-soal{
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #ddd;
+}
+
+.btn{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#wow{
+  float:right;
+  margin-right: 20px;
+}
+
+.btn-isset{
+  background: #000;
+  color: #fff;
+}
+
+.btn-isset:hover{
+  background: #333;
+  color:#ddd;
+}
+
+.btn-default:disabled{
+    background: #ccc !important;
+}
+
+
+
+
+

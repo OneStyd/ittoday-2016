@@ -1,0 +1,17 @@
+[11-Jul-2016 10:08:44 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 5
+[11-Jul-2016 10:08:44 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 60
+[11-Jul-2016 10:09:02 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 60
+[11-Jul-2016 10:09:13 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 5
+[11-Jul-2016 10:09:13 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 60
+[11-Jul-2016 10:09:24 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 5
+[21-Aug-2016 08:34:01 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 5
+[21-Aug-2016 08:34:01 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ittodayw/public_html/it-admin/isc-acara/halaman/jawabanpeserta.php on line 60
+[10-Sep-2016 20:43:27 Asia/Jakarta] PHP Warning:  include(../../connect_adm.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:43:27 Asia/Jakarta] PHP Warning:  include(../../connect_adm.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:43:27 Asia/Jakarta] PHP Warning:  include(): Failed opening '../../connect_adm.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:43:32 Asia/Jakarta] PHP Warning:  include(../../connect_adm.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:43:32 Asia/Jakarta] PHP Warning:  include(../../connect_adm.php): failed to open stream: No such file or directory in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:43:32 Asia/Jakarta] PHP Warning:  include(): Failed opening '../../connect_adm.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 2
+[10-Sep-2016 20:56:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '===' (T_IS_IDENTICAL) in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 13
+[10-Sep-2016 20:57:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 13
+[10-Sep-2016 20:57:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/ittodayw/public_html/it-admin/isc-acara/halaman/delans.php on line 13

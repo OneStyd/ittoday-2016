@@ -1,5 +1,5 @@
 <?php
-	$conn = new mysqli('localhost', 'root', '', 'ittoday_2016');
+	$conn = new mysqli('localhost', 'ittodayw_root', 'ithariiniipb', 'ittodayw_2016');
 	$tablename = "ittoday";
 
 	function log_out(){

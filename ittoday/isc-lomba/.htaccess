@@ -1,0 +1,22 @@
+
+
+# AuthName "Authorized personnel only."
+# AuthType Basic
+# Require valid-user
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([0-9a-zA-Z\-]*)$ $1.php [QSA,L]
+RewriteRule ^soal-s1/([0-9a-zA-Z\-]*)$ home.php?soal1=$1 [QSA,L]
+RewriteRule ^soal-s2/([0-9a-zA-Z\-]*)$ home.php?soal2=$1 [QSA,L]
+
+ErrorDocument 404 http://ittoday.web.id/404
+
+</IfModule>
+# AuthUserFile "/home/ittodayw/.htpasswds/public_html/isc-lomba/passwd"
