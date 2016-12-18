@@ -44,13 +44,13 @@ _MAIL_;
 		$mailer->IsSMTP();
 		//$mailer->SMTPDebug = 2;
 		$mailer->SMTPSecure = "ssl";
-		$mailer->Host = "sg100.idcloudhost.com"; //Add smtp details
+		$mailer->Host = "SMTP DETAILS"; //Add smtp details
 		$mailer->Port = "465";
 		$mailer->SMTPAuth = TRUE;
 		$mailer->Mailer = "smtp";
-		$mailer->Username = "admin@ittoday.web.id";  // Change this to your gmail adress
-		$mailer->Password = "ithariiniipb";  // Change this to your gmail password
-		$mailer->From = "admin@ittoday.web.id";  // This HAVE TO be your gmail adress
+		$mailer->Username = "E-MAIL ADDRESS";  // Change this to your gmail adress
+		$mailer->Password = "E-MAIL PASSWORD";  // Change this to your gmail password
+		$mailer->From = "E-MAIL ADDRESS AGAIN";  // This HAVE TO be your gmail adress
 		$mailer->FromName = "IT Today IPB"; // This is the from name in the email, you can put anything you like here
 		$mailer->Body = $mail_body;
 		$mailer->Subject = "(no-reply) Reset Password";
