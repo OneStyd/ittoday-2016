@@ -1,7 +1,7 @@
 <?php
-	$conn = new mysqli('localhost', 'ittodayw_root', 'ithariiniipb', 'ittodayw_2016');
-	$tablename = "ittoday";
-	$unique = "kestari_nSQHlKi1vq";
+	$conn = new mysqli(HOST, USER, PASS, DB);
+	$tablename = table;
+	$unique = unique_key;
 
 	function cek_login(){
 		if(isset($_SESSION[$unique])){
